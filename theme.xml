@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Theme name="Bootstrap 5 classic" version="1.1" date="23-11-2023" compatibility="2.3.3">
+	<author name ="e107 Inc / exas.nl" email="info@exas.nl" url="https://exas.nl" />
+	<summary>Bootstrap 5 classic theme</summary>
+	<description>A starter template for bootstrap 5.3.2.</description>
+	<category>generic</category>
+	<plugins>
+        <plugin name='gallery' url='core' />
+        <plugin name='hero' url='core' />
+        <plugin name='rss_menu' url='core' />
+        <plugin name='social' url='core' />
+        <plugin name='tinymce4' url='core' />
+        <plugin name='tagcloud' url='core' />
+	</plugins>
+	<keywords>
+		<word>bootstrap</word>
+		<word>bootstrap5</word>
+		<word>clean</word>
+        <word>wireframe</word>
+ 	</keywords>
+	<libraries>
+		<library name="bootstrap" version="5" scope="front"/>
+		<library name="fontawesome" version="6" scope="front" files="js" />
+		<library name="fontawesome" version="6" scope="wysiwyg" files="css" />
+        <library name="animate.css" scope="wysiwyg" />
+	</libraries>
+	<stylesheets>
+	   	<css file="css/style_default_color.css" default="true" name="BS_5.3.2 standard color" thumbnail='images/settings_bs5_c.png' scope='front' />
+	</stylesheets>
+	<screenshots>
+		<image>images/BS_5_classic.png</image>
+	</screenshots>
+	<layouts>
+		<layout name='home' title='Home Page' >
+			<custompages>FRONTPAGE</custompages>
+		</layout>
+			<layout name='full' title='Full Page' >
+			<custompages>forum/ download/</custompages>
+		</layout>
+		<layout name='sidebar_left' title='Sidebar (left)' />
+		<layout name='sidebar_right' title='Sidebar (right)' default='true' />
+		<layout name='splash' title='Splash Page' >
+			<custompages>login fpw signup</custompages>
+		</layout>
+		<layout name='bare' title='Bare Page' >
+			<custompages></custompages>
+		</layout>
+	</layouts>
+	<themePrefs>
+		<pref name='cardmenu_look'>1</pref>
+		<pref name='login_iframe'></pref>
+		<pref name='day_night'>1</pref>
+		<pref name='news_on'>0</pref>
+		<pref name='header_type'>1</pref>
+		<pref name='nav_sticky'></pref>
+		<pref name='nav_alignment'>left</pref>
+		<pref name='footer_type'>1</pref>
+	</themePrefs>
+</e107Theme>
