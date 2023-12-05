@@ -37,7 +37,7 @@ class theme_library
 		$libraries['cdn.bootstrap5']['version_arguments']['pattern'] = '/(\d\.\d\.\d\-[a-z]*)/';
 
 		// Bootstrap (local).
-		$libraries['bootstrap5']['library_path'] = '{e_THEME}bootstrap_5_classic/';
+		$libraries['bootstrap5']['library_path'] = '{THEME}';
 		$libraries['bootstrap5']['path'] = '';
 		$libraries['bootstrap5']['theme'] = '';
 		$libraries['bootstrap5']['version']	= '5.3.2';		
