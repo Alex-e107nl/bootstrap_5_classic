@@ -30,7 +30,7 @@ $FAQS_TEMPLATE['all']['item'] = "
 ";
 $FAQS_TEMPLATE['all']['end'] = "
 	</ul>
-</div></div>
+</div></div><br />
 ";
 
 $FAQS_TEMPLATE['caption'] = "{FAQ_CAPTION} <small>{FAQ_COUNT}</small>";
