@@ -505,6 +505,15 @@ ul.faq-listall {
 	padding-left: 1rem!important;
 }
 
+.pm >.form-inline {
+	position: relative;
+	display: inline-flex;
+    margin-bottom: 0;
+    vertical-align: middle;
+	border-radius: var(--bs-border-radius);
+	
+ }
+ 
 .form-inline {
 	position: relative;
 	display: inline-flex;

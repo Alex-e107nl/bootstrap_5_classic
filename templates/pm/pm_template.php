@@ -81,7 +81,7 @@ $sc_style['PM_REPLY']['post'] = "</td>
 
 $PM_WRAPPER['PM_ATTACHMENT_ICON']= " {---}";
 $PM_WRAPPER['PM_ATTACHMENTS']= "<div class='alert alert-block alert-info'>{---}</div>";
-
+$PM_WRAPPER['PM_NEXTPREV']= "<div class='pm ms-auto'>{---}</div>";
 //$sc_style['PM_NEXTPREV']['pre'] = "<tr><td class='forumheader' colspan='6' style='text-align:left'> ".LAN_PM_59;
 //$sc_style['PM_NEXTPREV']['post'] = "</td></tr>";
 
@@ -159,11 +159,11 @@ $PM_TEMPLATE['inbox']['empty'] = "
 //$PM_INBOX_FOOTER = "
 $PM_TEMPLATE['inbox']['end'] = "
 <tr>
-	<td class='forumheader' colspan='3'>
+	<td class='forumheader' colspan='4'>
 	<input type='hidden' name='pm_come_from' value='inbox' />
 	{PM_DELETE_SELECTED}
 	</td>
-	<td class='forumheader text-right' colspan='3'>
+	<td class='forumheader text-end text-right' colspan='2'>
 	{PM_NEXTPREV=inbox}
 	</td>
 </tr>
@@ -221,11 +221,11 @@ $PM_OUTBOX_FOOTER = "
 //$PM_OUTBOX_FOOTER = "
 $PM_TEMPLATE['outbox']['end'] = "
 <tr>
-	<td class='forumheader' colspan='3'>
+	<td class='forumheader' colspan='4'>
 	<input type='hidden' name='pm_come_from' value='inbox' />
 	{PM_DELETE_SELECTED}
 	</td>
-	<td class='forumheader text-right' colspan='3'>
+	<td class='forumheader text-end text-right' colspan='2'>
 	{PM_NEXTPREV=outbox}
 	</td>
 </tr>
