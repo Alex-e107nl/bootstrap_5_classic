@@ -129,18 +129,11 @@ if (!defined('e107_INIT')) { exit; }
 	                {USER_UPDATE_LINK}
 	            </div>
 	            <div class="panel-body">
-	                <ul class="pager user-view-nextprev mx-auto">
-	                    <li class="previous ms-auto">
-	                       {USER_JUMP_LINK=prev}
-	                    </li>
-						<span class="mx-auto"></span>
-		               <li>
-	                       <!-- Back to List? -->
-	                    </li>
-	                    <li class="next me-auto">
-	                       {USER_JUMP_LINK=next}
-	                    </li>
-	                </ul>
+					<ul class="pagination justify-content-between my-5 news-view-pagination text-secondary">
+						<li class="page-item col-md-6">{USER_JUMP_LINK=prev}</li>
+						<li class="page-item col-md-6 text-right text-end"> {USER_JUMP_LINK=next}</li>
+					</ul>
+	            
 	            </div>
 	        </div>
 			
