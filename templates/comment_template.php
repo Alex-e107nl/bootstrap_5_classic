@@ -24,7 +24,7 @@ $COMMENT_WRAPPER['item']['COMENT_TIMEDATE']     = '<small>{---}</small>';
 $COMMENT_WRAPPER['item']['COMMENT_EDIT']        = '<span class="comment-edit">{---}</span>';
 $COMMENT_WRAPPER['item']['COMENT_REPLY']		= '<span class="comment-reply">{---}</span>';
 $COMMENT_WRAPPER['item']['COMMENT_AVATAR']  	= '<span class="comment-avatar center">{---}</span>';
-$COMMENT_WRAPPER['item']['COMMENT_MODERATE']	= '<span class="comment-moderate">{---}</span>';
+$COMMENT_WRAPPER['item']['COMMENT_MODERATE']	= '<span class="comment-moderate me-2">{---}</span>';
 
 $COMMENT_WRAPPER['form'] = $COMMENT_WRAPPER['item']; // use the above wrappers for the 'form' as well.
 
@@ -33,23 +33,24 @@ $COMMENT_WRAPPER['form'] = $COMMENT_WRAPPER['item']; // use the above wrappers f
 		
 $COMMENT_TEMPLATE['form'] = "
 	{SETIMAGE: w=90&h=90&crop=1}
-	<div class='media comment-box comment-box-form d-flex clearfix'>
+	<div class='media comment-box comment-box-form d-flex bg-body-tertiary rounded-3 p-3 clearfix'>
 		<div class='comment-box-left media-object pull-left me-3' >
 		{COMMENT_AVATAR: shape=circle}
 		</div>
 		<div class='media-body comment-box-right text-left' >
-			<div class='P10'>
+			<div class='P10 mb-3'>
 				{AUTHOR_INPUT}
 				{COMMENT_INPUT}
+			</div>
 			<div id='commentformbutton'>
 				{COMMENT_BUTTON}
 				{COMMENT_SHARE}
 			</div>
-			</div>
+			
 		</div>
 	</div>
 	<div class='clear_b'><!-- --></div>
-	<hr>"; 
+	"; 
 
 $COMMENT_TEMPLATE['item'] = '
 	{SETIMAGE: w=24&h=24&crop=1}
@@ -70,5 +71,5 @@ $COMMENT_TEMPLATE['item'] = '
 
 $COMMENT_TEMPLATE['layout']	= '
 	<div class="stickiebody"><ul> {COMMENTS}</ul></div> {COMMENTFORM}
-	<div class="my-1">{MODERATE}</div>';
+	<div class="my-2">{MODERATE}</div>';
 										
