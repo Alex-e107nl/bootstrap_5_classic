@@ -545,6 +545,7 @@ pre {
   border: 1px solid var(--bs-border-color);
   --bs-bg-opacity: 1;
   padding: 4px;
+  color: var(--bs-dark);
 }
 
 
