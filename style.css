@@ -546,3 +546,13 @@ pre {
   --bs-bg-opacity: 1;
   padding: 4px;
 }
+
+
+/* e107 captcha img */
+.secure-image  {
+  background-color: #212529!important;
+  color: #c0c1c1!important;   
+  border-radius: var(--bs-border-radius);
+  padding: 5px 0px 0px 4px;
+  margin-bottom: 2px;
+}
