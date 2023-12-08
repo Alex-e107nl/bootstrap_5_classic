@@ -166,5 +166,5 @@ $NEWS_TEMPLATE['related']['end'] = "</ul>";*/
 
 $NEWS_TEMPLATE['related']['caption']    = '{LAN=RELATED}';
 $NEWS_TEMPLATE['related']['start']      = '{SETIMAGE: w=450&h=450&crop=1}<div class="row">';
-$NEWS_TEMPLATE['related']['item']       = '<div class="col-md-3"><a href="{RELATED_URL}">{RELATED_IMAGE}</a><h5><a href="{RELATED_URL}">{RELATED_TITLE}</a></h5></div>';
+$NEWS_TEMPLATE['related']['item']       = '<div class="col-md-3 text-center"><a href="{RELATED_URL}">{RELATED_IMAGE}</a><h6><a href="{RELATED_URL}">{RELATED_TITLE}</a></h6></div>';
 $NEWS_TEMPLATE['related']['end']        = '</div>';
