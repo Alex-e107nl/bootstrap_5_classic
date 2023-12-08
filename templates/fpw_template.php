@@ -18,8 +18,8 @@ $FPW_TEMPLATE['form'] = '
 							<div class="col-sm-12">
 								<div class="col-sm-6 mb-3 float-start">
 									<div class="input-group">
-										<span class="form-group mt-2 col-sm-3">{FPW_CAPTCHA_IMG}</span>
-										<span class="form-group col-sm-9">{FPW_CAPTCHA_INPUT}</span>
+										<span class="form-group mt-0 col-sm-6">{FPW_CAPTCHA_IMG}</span>
+										<span class="form-group col-sm-6">{FPW_CAPTCHA_INPUT}</span>
 									</div>
 								</div>
 								<div class="col-sm-6 float-end px-4">
