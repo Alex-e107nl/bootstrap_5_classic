@@ -70,4 +70,7 @@ Welkomstbericht breedte tekstvlak, smal (col-lg-6) gemiddeld (col-lg-8) breed (c
 define("LAN_THEMEPREF_47", "Aan");
 define("LAN_THEMEPREF_48", "Uit");
 define("LAN_THEMEPREF_49", "Aanmeld en login link");
+define("LAN_THEMEPREF_50", "Alt-5 Layout-8 button link kleur");
+define("LAN_THEMEPREF_51", "<br>
+Kies de kleur van de buttons die via ALT-5 (navigatie links) rechtsboven geplaatst kunnen worden, standaard BS kleuren.");
 

@@ -16,8 +16,11 @@
 - alt.........vertical with flex-column and ul/li/a version, ul.nav.flex-column + li.nav-item + a.nav-link
 - alt5........vertical with flex-column 	and nav/a version, nav.nav.flex-column + a.nav-link
 - alt6........ul/li/a list
+- alt7........
  */
 
+$sitetheme = e107::getPref('sitetheme');
+$alt5color  = e107::pref('theme', 'alt5color');
 
 // TEMPLATE FOR {NAVIGATION=main}
 $NAVIGATION_TEMPLATE['main']['start'] = "<ul class='navbar-nav nav {NAV_CLASS}'>";
@@ -224,6 +227,22 @@ $NAVIGATION_TEMPLATE['alt6']['submenu_loweritem'] = $NAVIGATION_TEMPLATE['footer
 $NAVIGATION_TEMPLATE['alt6']['submenu_loweritem_active'] = $NAVIGATION_TEMPLATE['footer']['submenu_item_active'];
 $NAVIGATION_TEMPLATE['alt6']['submenu_lowerend'] = "";
 
+
+$NAVIGATION_TEMPLATE['alt7']['start'] = "";
+$NAVIGATION_TEMPLATE['alt7']['item'] = "<li>
+ <a class='dropdown-item ' role='button' href='{NAV_LINK_URL}' {NAV_LINK_OPEN} >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+$NAVIGATION_TEMPLATE['alt7']['item_active'] = "<li {NAV_LINK_OPEN}>
+	<a class='dropdown-item active' role='button' href='{NAV_LINK_URL}' >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+$NAVIGATION_TEMPLATE['alt7']['end'] = '';
+
+$NAVIGATION_TEMPLATE['alt8']['start'] = "<span class='d-inline-flex gap-1'>
+";
+$NAVIGATION_TEMPLATE['alt8']['item'] = "
+ <a class='btn ".$alt5color."' href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
+$NAVIGATION_TEMPLATE['alt8']['item_active'] = "
+<a class='btn ".$alt5color." active'  href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
+$NAVIGATION_TEMPLATE['alt8']['end'] = '';
+
 $NAVIGATION_INFO['main']['title'] = 'Main - Top Default';
 $NAVIGATION_INFO['main-alt']['title'] = 'Main - Top Alternative';
 $NAVIGATION_INFO['side']['title'] = 'Side - List group';
@@ -233,3 +252,6 @@ $NAVIGATION_INFO['footer-alt']['title'] = 'Footer - Horizontal Alternative';
 $NAVIGATION_INFO['alt']['title'] = 'Alt - Vertical Default';
 $NAVIGATION_INFO['alt5']['title'] = 'Alt5 - Vertical Alternative';
 $NAVIGATION_INFO['alt6']['title'] = 'Alt6 - Not styled list';
+$NAVIGATION_INFO['alt7']['title'] = 'Alt7 - Not styled list no ul';
+$NAVIGATION_INFO['alt8']['title'] = 'Alt8 - Buttons';
+

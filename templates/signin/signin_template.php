@@ -62,10 +62,15 @@ $SIGNIN_TEMPLATE['signout'] = '
 				<li>
 					<a class="dropdown-item" role="button" href="{SIGNIN_PROFILE_HREF}"><span class="fa fa-user"></span> {LAN=LAN_LOGINMENU_13}</a>
 				</li>
-				<li class="divider"></li>
+			
+				
 				{SIGNIN_ADMIN_HREF}
+				{NAVIGATION: layout=alt7&type=alt}
+				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="{SIGNIN_LOGOUT_HREF}"><span class="fa fa-power-off"></span> {LAN=LAN_LOGOUT}</a></li>
+					
 				</ul>
+				
 			</li>
 		</ul>
 		

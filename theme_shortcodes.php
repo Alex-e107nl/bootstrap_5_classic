@@ -46,7 +46,9 @@ var $override = true;
 										
 										<div class="collapse navbar-collapse" id="navbars">
 											{BOOTSTRAP_NAV_ALIGN}
-
+											<div class="my-auto">
+												{NAVIGATION: layout=alt8&type=alt5}
+											</div>
 											<div class="text-end ms-2">
 												{SIGNIN}
 											</div>
@@ -76,10 +78,12 @@ var $override = true;
 										<div class="collapse navbar-collapse" id="navbars">
 											{BOOTSTRAP_NAV_ALIGN}
 
+											<div class="my-auto py-2">
+												{SITESEARCH}
+											</div>
 											<div class="my-auto">
-								{SITESEARCH}
-								</div>
-
+												{NAVIGATION: layout=alt8&type=alt5}
+											</div>
 											<div class="text-end ms-2">
 												{SIGNIN}
 											</div>
@@ -107,6 +111,11 @@ var $override = true;
 									<div class="collapse navbar-collapse" id="navbars">	
 
 										{BOOTSTRAP_NAV_ALIGN}
+										
+										<div class="my-auto">
+											{NAVIGATION: layout=alt8&type=alt5}
+										</div>
+											
 										<div class="text-end ms-2">
 											{SIGNIN}
 										</div>
@@ -119,7 +128,7 @@ var $override = true;
 								<a href="{SITEURL}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none d-none d-lg-block">
 									{BOOTSTRAP_BRANDING}
 								</a>
-								<div class="my-auto">
+								<div class="my-auto py-2">
 								{SITESEARCH}
 								</div>
 							</div>
@@ -155,6 +164,10 @@ var $override = true;
 									<div class="collapse navbar-collapse" id="navbars">	
 
 										{BOOTSTRAP_NAV_ALIGN}
+										
+										<div class="my-auto">
+											{NAVIGATION: layout=alt8&type=alt5}
+										</div>
 										<div class="text-end ms-2">
 											{SIGNIN}
 										</div>
@@ -187,8 +200,10 @@ var $override = true;
 									</div>
 									<div class="offcanvas-body">
 										{BOOTSTRAP_NAV_ALIGN}
-													
-													{SIGNIN}
+										<div class="my-auto">
+											{NAVIGATION: layout=alt8&type=alt5}
+										</div>
+										{SIGNIN}
 									</div>
 								</div>
 							</div>
@@ -217,8 +232,10 @@ var $override = true;
 									</div>
 									<div class="offcanvas-body">
 										{BOOTSTRAP_NAV_ALIGN}
-													
-													{SIGNIN}
+										<div class="my-auto">
+											{NAVIGATION: layout=alt8&type=alt5}
+										</div>
+										{SIGNIN}
 									</div>
 								</div>
 							</div>
@@ -246,7 +263,9 @@ var $override = true;
 									<div class="collapse navbar-collapse" id="navbars">	
 
 										{BOOTSTRAP_NAV_ALIGN}
-										
+										<div class="my-auto">
+											{NAVIGATION: layout=alt8&type=alt5}
+										</div>
 										<div class="text-end ms-2">
 											{SIGNIN}
 										</div>
@@ -285,7 +304,10 @@ var $override = true;
 								
 								<div class="ms-auto d-block ms-2 d-none d-lg-block">
 									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
-										{SIGNIN}
+											<div class="my-auto">
+												{NAVIGATION: layout=alt8&type=alt5}
+											</div>
+											{SIGNIN}
 									</div>
 								</div>
 										
@@ -308,6 +330,9 @@ var $override = true;
 										{BOOTSTRAP_NAV_ALIGN}
 										<div class="my-auto d-none d-lg-block">
 											{BOOTSTRAP_ALT_ALIGN}
+										</div>
+										<div class="my-auto d-lg-none">
+											{NAVIGATION: layout=alt8&type=alt5}
 										</div>
 										<div class="d-lg-none">
 											{SIGNIN}

@@ -70,3 +70,6 @@ Welcome message width text area, narrow (col-lg-6) medium (col-lg-8) wide (col-l
 define("LAN_THEMEPREF_47", "On");
 define("LAN_THEMEPREF_48", "Off");
 define("LAN_THEMEPREF_49", "Signup and Signin link");
+define("LAN_THEMEPREF_50", "Alt-5 Layout-8 button link color");
+define("LAN_THEMEPREF_51", "<br>
+Choose the color of the buttons that can be placed via ALT-5 (navigation links) at the top right, standard BS colors.");
