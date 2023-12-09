@@ -6,14 +6,14 @@
 $SIGNIN_TEMPLATE = [];
 
 
-$SIGNIN_WRAPPER['signin']['SIGNIN_SIGNUP_HREF'] = '<li class="nav-item"><a class="nav-link link-body-emphasis px-2" href="{---}">{LAN=LAN_LOGINMENU_3}</a></li>';
+$SIGNIN_WRAPPER['signin']['SIGNIN_SIGNUP_HREF'] = '<li class="nav-item"><a class="nav-link px-2" href="{---}">{LAN=LAN_LOGINMENU_3}</a></li>';
 
 $SIGNIN_TEMPLATE['signin'] = '
 			<ul class="navbar-nav nav">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="divider-vertical"></li>
-				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle link-body-emphasis px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
+				<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
 					<div class="dropdown-menu dropdown-menu-end col-sm-12" style="min-width:250px; padding: 15px; padding-bottom: 0px;">
 					
 					{SIGNIN_FORM=start}
@@ -36,7 +36,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 					{SIGNIN_FORM=end}
 					</div>
 				
-				</li>
+				</div>
 	
 			</ul>';
 
