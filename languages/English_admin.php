@@ -34,6 +34,8 @@ define("LAN_THEMEPREF_24", "10");
 define("LAN_THEMEPREF_25", "Footer type");
 define("LAN_THEMEPREF_26", "Show Light/Dark/Auto Option");
 define("LAN_THEMEPREF_27", "News partly for members only");
+define("LAN_THEMEPREF_28", "Welcome Message background");
+define("LAN_THEMEPREF_29", "Choose an image of at least 1920px by 1080px.");
 define("LAN_THEMEPREF_30", "<br>
 1: 1 row, logo left, nav left middle, right login, collapse standard<br>
 2: 1 row, logo on the left, nav left middle, right search field and login / collapse standard<br>
@@ -48,3 +50,20 @@ define("LAN_THEMEPREF_31", "<br>
 2: 2 rows, row 1 - {NAVIGATION: type=footer} center / row 2 {SITEDISCLAIMER} left, {XURL_ICONS} right<br>
 3: 1 row, {SITELOGO: h=50} left, {SITEDISCLAIMER} center, {XURL_ICONS} right<br>
 4: 1 row, {SITED DISCLAIMER} left, {SITELOGO: h=50} center, {NAVIGATION: type=footer} right");
+define("LAN_THEMEPREF_32", "Primary");
+define("LAN_THEMEPREF_33", "Secondary");
+define("LAN_THEMEPREF_34", "Success");
+define("LAN_THEMEPREF_35", "Info");
+define("LAN_THEMEPREF_36", "Warning");
+define("LAN_THEMEPREF_37", "Danger");
+define("LAN_THEMEPREF_38", "Light");
+define("LAN_THEMEPREF_39", "Dark");
+define("LAN_THEMEPREF_40", "Welcome Message text color");
+define("LAN_THEMEPREF_41", "<br>
+Choose the text color of the welcome message, standard BS colors.");
+define("LAN_THEMEPREF_42", "Narrow");
+define("LAN_THEMEPREF_43", "Medium");
+define("LAN_THEMEPREF_44", "Wide");
+define("LAN_THEMEPREF_45", "Welcome message width text area");
+define("LAN_THEMEPREF_46", "<br>
+Welcome message width text area, narrow (col-lg-6) medium (col-lg-8) wide (col-lg-12).");

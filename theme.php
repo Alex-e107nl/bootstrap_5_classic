@@ -28,6 +28,7 @@ if(!defined('e107_INIT'))
             // e107::meta('apple-mobile-web-app-capable','yes');
 
             $login_iframe  = e107::pref('theme', 'login_iframe', false);
+			
 
             if(THEME_LAYOUT === "splash" && $login_iframe)
             {
@@ -77,7 +78,10 @@ if(!defined('e107_INIT'))
 
 		function tablestyle($caption, $text, $mode='', $options = array())
 		{
-
+			$bgimage  = e107::pref('theme', 'wmessagebg');
+			$bgimage = e107::getParser()->replaceConstants($bgimage);
+			$wtextcolor  = e107::pref('theme', 'wtextcolor');
+			$wtextwidth  = e107::pref('theme', 'wtextwidth');
 			$style = varset($options['setStyle'], 'default');
 
 			// Override style based on mode.
@@ -132,14 +136,23 @@ if(!defined('e107_INIT'))
 			{
 
 				case 'wmessage':
-				    echo '<div class="p-5 mb-4 bg-body-tertiary rounded-3"><div class="container py-5 ">';
-				        if(!empty($caption))
-				        {
-				          echo '<h1 class="display-5 fw-bold">'.$caption.'</h1>';
-				        }
+				    echo '	<div class="container-fluid hb-me bg-body-tertiary" style="background-image:  url('.$bgimage.')">
+								<div class="row full-screen align-items-left">
+									<div class="col-12 col-xxl-8 mx-auto p-4 py-md-5">
+										<div class="row d-flex py-5 my-5">
+											<div class="'.$wtextwidth.' p-5 trans01 align-content-lg-start '.$wtextcolor.' rounded-3">';
+											if(!empty($caption))
+											{
+											echo '<h1 class="display-5 fw-bold">'.$caption.'</h1>';
+											}
 
-				    echo '<p class="col-md-12 fs-5">'.$this->remove_ptags($text).'</p>';
-				    echo '</div></div>';
+											echo '<p class="col-md-12 fs-5">'.$this->remove_ptags($text).'</p>';
+											echo '</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						';
 	            break;
     
 				case 'bare':

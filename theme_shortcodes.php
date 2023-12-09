@@ -836,6 +836,7 @@ var $override = true;
 
 			return $news_body;
 	}
+
 	
 }
 
