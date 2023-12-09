@@ -67,3 +67,7 @@ define("LAN_THEMEPREF_44", "Breed");
 define("LAN_THEMEPREF_45", "Welkomstbericht breedte tekstvlak");
 define("LAN_THEMEPREF_46", "<br>
 Welkomstbericht breedte tekstvlak, smal (col-lg-6) gemiddeld (col-lg-8) breed (col-lg-12).");
+define("LAN_THEMEPREF_47", "Aan");
+define("LAN_THEMEPREF_48", "Uit");
+define("LAN_THEMEPREF_49", "Aanmeld en login link");
+

@@ -6,10 +6,14 @@
 $SIGNIN_TEMPLATE = [];
 
 
+$sitetheme = e107::getPref('sitetheme');
+$loginlink  = e107::pref('theme', 'loginlink');
+
+
 $SIGNIN_WRAPPER['signin']['SIGNIN_SIGNUP_HREF'] = '<li class="nav-item"><a class="nav-link px-2" href="{---}">{LAN=LAN_LOGINMENU_3}</a></li>';
 
 $SIGNIN_TEMPLATE['signin'] = '
-			<ul class="navbar-nav nav">
+			<ul class="navbar-nav nav '.$loginlink.'">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="divider-vertical"></li>
 				<div class="nav-item dropdown">

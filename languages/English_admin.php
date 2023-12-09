@@ -67,3 +67,6 @@ define("LAN_THEMEPREF_44", "Wide");
 define("LAN_THEMEPREF_45", "Welcome message width text area");
 define("LAN_THEMEPREF_46", "<br>
 Welcome message width text area, narrow (col-lg-6) medium (col-lg-8) wide (col-lg-12).");
+define("LAN_THEMEPREF_47", "On");
+define("LAN_THEMEPREF_48", "Off");
+define("LAN_THEMEPREF_49", "Signup and Signin link");
