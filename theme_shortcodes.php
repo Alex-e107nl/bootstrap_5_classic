@@ -772,11 +772,11 @@ var $override = true;
 		return '<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle link-body-emphasis px-2" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" data-bs-target="#pm-nav" aria-haspopup="true" aria-expanded="false">' . $icon . $count . ' <span><i class="lni lni-chevron-down"></i></span></a>
 					
-					<div class="dropdown-menu dropdown-menu-end" aria-labelledby="pm-nav">			
-						<a class="dropdown-item" href="' . $urlInbox . '">' . LAN_PLUGIN_PM_INBOX . '</a>
-						<a class="dropdown-item" href="' . $urlOutbox . '">' . LAN_PLUGIN_PM_OUTBOX . '</a>
-						<a class="dropdown-item" href="' . $urlCompose . '">' . LAN_PLUGIN_PM_NEW . '</a> 
-					</div>
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="pm-nav">			
+						<li><a class="dropdown-item" href="' . $urlInbox . '">' . LAN_PLUGIN_PM_INBOX . '</a></li>
+						<li><a class="dropdown-item" href="' . $urlOutbox . '">' . LAN_PLUGIN_PM_OUTBOX . '</a></li>
+						<li><a class="dropdown-item" href="' . $urlCompose . '">' . LAN_PLUGIN_PM_NEW . '</a> </li>
+					</ul>
 				';
 		}
 		
