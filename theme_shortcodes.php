@@ -557,12 +557,12 @@ var $override = true;
 		{
 			case 'logo':
 
-				return e107::getParser()->parseTemplate('{SITELOGO: h=50}', true);
+				return e107::getParser()->parseTemplate('{SITELOGO: h=80}', true);
 
 				break;
 
 			case 'sitenamelogo':
-				return "" . e107::getParser()->parseTemplate('{SITELOGO: h=50}', true) . "<span class='mt-2'>" . SITENAME . "</span>";
+				return "" . e107::getParser()->parseTemplate('{SITELOGO: h=80}', true) . "<span class='mt-2'>" . SITENAME . "</span>";
 
 				break;
 

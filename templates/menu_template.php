@@ -40,11 +40,11 @@ $MENU_TEMPLATE['image-only']['start'] 				= '<div class="cpage-menu {CMENUNAME}"
 $MENU_TEMPLATE['image-only']['body'] 				= '{CMENUIMAGE}';
 $MENU_TEMPLATE['image-only']['end'] 				= '</div>';
 
-$MENU_TEMPLATE['image-only-fw']['start'] 				= '<div class="text-center cpage-menu {CMENUNAME}">{SETIMAGE: w=0}';
+$MENU_TEMPLATE['image-only-fw']['start'] 				= '<div class="text-center bg-white cpage-menu {CMENUNAME}">{SETIMAGE: w=0}';
 $MENU_TEMPLATE['image-only-fw']['body'] 				= '{CMENUIMAGE}';
 $MENU_TEMPLATE['image-only-fw']['end'] 				= '</div>';
 
-$MENU_TEMPLATE['textleft-imageright-fw']['start'] 		= '<div class="row m-0 g-0 fs-5 bg-success-subtle ">{SETIMAGE: w=0}';
+$MENU_TEMPLATE['textleft-imageright-fw']['start'] 		= '<div class="row m-0 g-0 fs-5 bg-body-tertiary ">{SETIMAGE: w=0}';
 $MENU_TEMPLATE['textleft-imageright-fw']['body'] 		= ' 
 
 							<div class="col-12 ps-lg-3">
@@ -60,7 +60,7 @@ $MENU_TEMPLATE['textleft-imageright-fw']['body'] 		= '
 ';
 $MENU_TEMPLATE['textleft-imageright-fw']['end'] 		= '</div>';
 
-$MENU_TEMPLATE['imageleft-textright-fw']['start'] 		= '<div class="row m-0 g-0 fs-5 bg-warning-subtle">{SETIMAGE: w=0}';
+$MENU_TEMPLATE['imageleft-textright-fw']['start'] 		= '<div class="row m-0 g-0 fs-5 bg-body-secondary">{SETIMAGE: w=0}';
 $MENU_TEMPLATE['imageleft-textright-fw']['body'] 		= ' 
 							
 							<div class="col-12 pe-lg-3 text-lg-end">
