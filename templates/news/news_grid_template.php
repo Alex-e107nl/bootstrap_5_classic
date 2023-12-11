@@ -101,36 +101,33 @@
 
 
 
-	$NEWS_GRID_TEMPLATE['media-list']['start'] = '<div class="row news-grid-default">';
+	$NEWS_GRID_TEMPLATE['media-list']['start'] = ' 
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2">';
 
-	$NEWS_GRID_TEMPLATE['media-list']['featured'] = '<div class="featured item col-sm-6" >
-														{SETIMAGE: w=600&h=400&crop=1}
-														{NEWSTHUMBNAIL=placeholder}
-														 <h3><a href="{NEWS_URL}">{NEWS_TITLE}</a></h3>
-														 <p>{NEWS_SUMMARY: limit=60}</p>
-													</div>
-
-
-            							          ';
-
-
-	$NEWS_GRID_TEMPLATE['media-list']['item'] = '<div class="item col-sm-6">
-												{SETIMAGE: w=120&h=120&crop=1}
-												<ul class="media-list">
-													<li class="media">
-													  <div class="media-left media-top">
-													    <a href="{NEWS_URL}">
-													      {NEWS_IMAGE: type=tag&class=media-object img-rounded&placeholder=1}
+	$NEWS_GRID_TEMPLATE['media-list']['featured'] = '<div class="col d-flex align-items-start">
+														{SETIMAGE: w=80&h=80&crop=1}
+													    <a class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" href="{NEWS_URL}">
+													    {NEWS_IMAGE: type=tag&class=media-object img-rounded&placeholder=1}
 													    </a>
-													  </div>
-													  <div class="media-body">
-													    <h4 class="media-heading"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h4>
-													    <p>{NEWS_SUMMARY: limit=60}</p>
-													  </div>
-													  </li>
+														<div>
+															<h1 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h1>
+															<p>{NEWS_SUMMARY: limit=60}</p>
+														</div>  		
+													</div>
+													';
 
-												</ul>
-            							    </div>';
+
+	$NEWS_GRID_TEMPLATE['media-list']['item'] = ' 	<div class="col d-flex align-items-start">
+														{SETIMAGE: w=80&h=80&crop=1}
+													    <a class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" href="{NEWS_URL}">
+													    {NEWS_IMAGE: type=tag&class=media-object img-rounded&placeholder=1}
+													    </a>
+														<div>
+															<h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h3>
+															<p>{NEWS_SUMMARY: limit=60}</p>
+														</div>  		
+													</div>
+													';
 
 
 	$NEWS_GRID_TEMPLATE['media-list']['end'] = '</div>';
