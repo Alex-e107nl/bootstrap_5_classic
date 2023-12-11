@@ -37,6 +37,7 @@ if(!defined('e107_INIT'))
 			
 		//	e107::js('theme', 'js/bootstrap.bundle.min.js', 'jquery');		
 			e107::js('theme', 'js/colormode.js', 'jquery');
+			e107::js('theme', 'js/glightbox.min.js', 'jquery');
 			e107::js('theme', 'js/main.js', 'jquery');
 			
 		//	e107::css('url', "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
@@ -53,6 +54,8 @@ if(!defined('e107_INIT'))
 		//	e107::css('theme', 'css/bootstrap.min.css'); // always load style.css last.
 			e107::css('theme', 'style.css'); // always load style.css last.
 			e107::css('theme', THEME_STYLE);
+			e107::css('theme', 'css/glightbox.min.css');
+			e107::css('theme', 'css/plyr.min.css');
 			e107::css('theme', 'css/stickiestyle.css');
 			
 		//	e107::css('inline', '#carousel-hero.carousel {   margin-bottom: 80px; }');
