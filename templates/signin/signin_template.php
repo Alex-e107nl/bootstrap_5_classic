@@ -16,31 +16,31 @@ $SIGNIN_TEMPLATE['signin'] = '
 			<ul class="navbar-nav nav '.$loginlink.'">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="divider-vertical"></li>
-				<div class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
 					<div class="dropdown-menu dropdown-menu-end col-sm-12" style="min-width:250px; padding: 15px; padding-bottom: 0px;">
 					
-					{SIGNIN_FORM=start}
-					<p>{SIGNIN_INPUT_USERNAME}</p>
-					<p>{SIGNIN_INPUT_PASSWORD}</p>
+						{SIGNIN_FORM=start}
+						<p>{SIGNIN_INPUT_USERNAME}</p>
+						<p>{SIGNIN_INPUT_PASSWORD}</p>
 	
-					<div class="form-group"></div>
-					{SIGNIN_IMAGECODE_NUMBER}
-					{SIGNIN_IMAGECODE_BOX}
+						<div class="form-group"></div>
+						{SIGNIN_IMAGECODE_NUMBER}
+						{SIGNIN_IMAGECODE_BOX}
 					
-					<div class="checkbox my-2">		
-					<label class="string optional" for="bs3-autologin"><input style="margin-right: 10px;" type="checkbox" name="autologin" id="bs3-autologin" value="1">
-					{LAN=LAN_LOGINMENU_6}</label>
-					</div>
-					<div class="d-grid gap-2" style="padding-bottom:15px">
-					<input class="btn btn-primary btn-block" type="submit" name="userlogin" id="bs3-userlogin" value="{LAN=LAN_LOGINMENU_51}">			
-					<a href="{SIGNIN_FPW_HREF}" class="btn btn-default btn-secondary btn-sm  btn-block">{LAN=LAN_LOGINMENU_4}</a>
-					<a href="{SIGNIN_RESEND_LINK=href}" class="btn btn-default btn-secondary btn-sm  btn-block">{LAN=LAN_LOGINMENU_40}</a>
-					</div>
-					{SIGNIN_FORM=end}
+						<div class="checkbox my-2">		
+							<label class="string optional" for="bs3-autologin"><input style="margin-right: 10px;" type="checkbox" name="autologin" id="bs3-autologin" value="1">
+							{LAN=LAN_LOGINMENU_6}</label>
+						</div>
+						<div class="d-grid gap-2" style="padding-bottom:15px">
+							<input class="btn btn-primary btn-block" type="submit" name="userlogin" id="bs3-userlogin" value="{LAN=LAN_LOGINMENU_51}">			
+							<a href="{SIGNIN_FPW_HREF}" class="btn btn-default btn-secondary btn-sm  btn-block">{LAN=LAN_LOGINMENU_4}</a>
+							<a href="{SIGNIN_RESEND_LINK=href}" class="btn btn-default btn-secondary btn-sm  btn-block">{LAN=LAN_LOGINMENU_40}</a>
+						</div>
+						{SIGNIN_FORM=end}
 					</div>
 				
-				</div>
+				</li>
 	
 			</ul>';
 
