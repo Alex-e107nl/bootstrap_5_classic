@@ -135,9 +135,9 @@
 	// ------------------ custom cards -----------------
 	
 	
-	$NEWS_GRID_TEMPLATE['customc']['start'] = '  <div class="album py-5"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">';
+	$NEWS_GRID_TEMPLATE['customcard']['start'] = '  <div class="album py-5"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">';
 
-	$NEWS_GRID_TEMPLATE['customc']['featured'] = '	{SETIMAGE: w=800&h=600&crop=1}
+	$NEWS_GRID_TEMPLATE['customcard']['featured'] = '	{SETIMAGE: w=800&h=600&crop=1}
 													<div class="col">
 														<div class="card shadow-sm">
 															{NEWSTHUMBNAIL=placeholder}
@@ -157,7 +157,7 @@
 													</div>
             							          ';
 
-	$NEWS_GRID_TEMPLATE['customc']['item'] = '{SETIMAGE: w=800&h=600&crop=1}
+	$NEWS_GRID_TEMPLATE['customcard']['item'] = '{SETIMAGE: w=800&h=600&crop=1}
 													<div class="col">
 														<div class="card shadow-sm">
 															{NEWSTHUMBNAIL=placeholder}
@@ -178,7 +178,62 @@
 	';
 	
 	
-	$NEWS_GRID_TEMPLATE['customc']['end'] = '</div></div>';
+	$NEWS_GRID_TEMPLATE['customcard']['end'] = '</div></div>';
+	
+	
+	
+	$NEWS_GRID_TEMPLATE['customcard2']['start'] = '<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">';
+
+	$NEWS_GRID_TEMPLATE['customcard2']['featured'] = '	{SETIMAGE: w=800&h=600&crop=1}
+													<div class="col">
+														<div class="card shadow-sm">
+															{NEWSTHUMBNAIL=placeholder}
+															<div class="card-body">
+																<h3>{NEWSTITLE}</h3>
+																<p>{NEWS_SUMMARY: limit=80}</p>
+																<div class="d-flex justify-content-between align-items-center">
+																	<div class="btn-group">
+																		<a class="btn btn-sm btn-primary" href="{NEWSURL}">{LAN=READ_MORE}</a>
+																		<div class="btn btn-sm btn-outline-secondary">{NEWSCATEGORY}</div>
+               														</div>
+																	<div class="btn btn-sm btn-light"> {NEWSAUTHOR}</div>
+            
+																</div>
+															</div>
+														</div>
+													</div>
+            							          ';
+
+	$NEWS_GRID_TEMPLATE['customcard2']['item'] = '{SETIMAGE: w=800&h=600&crop=1}
+													<div class="col">
+														 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url("{NEWS_THUMBNAIL: src=1&w=0&h=0}");">
+														 
+														
+															<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+																<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{NEWSTITLE}</h3>
+															
+															<ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+	  
+	  
+	';
+	
+	
+	$NEWS_GRID_TEMPLATE['customcard2']['end'] = '</div>';
 
 
 
