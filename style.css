@@ -572,3 +572,17 @@ pre {
 
 	
 }
+
+/* extra for newsgrid customcard 2 */
+.customcard2 a  {
+	color: RGBA(var(--bs-light-rgb),var(--bs-link-opacity,1)) !important;
+}
+.customcard2 a:hover  {
+	color:  RGBA(var(--bs-dark-rgb),var(--bs-link-opacity,1)) !important;
+}
+.customcard2b .card {
+border: 0px solid !important;
+}
+
+
+
