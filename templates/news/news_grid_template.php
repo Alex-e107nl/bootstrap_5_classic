@@ -184,7 +184,7 @@
 	
 	$NEWS_GRID_TEMPLATE['customcard2']['start'] = '<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">';
 
-	$NEWS_GRID_TEMPLATE['customcard2']['featured'] = '{SETIMAGE: w=800&h=600&crop=1}
+	$NEWS_GRID_TEMPLATE['customcard2']['featured'] = '{SETIMAGE: w=1024&h=768&crop=1}
 													<div class="col customcard2b">
 														<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({NEWS_IMAGE: type=src});">		
 															<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -205,7 +205,7 @@
 													</div>
             							          ';
 
-	$NEWS_GRID_TEMPLATE['customcard2']['item'] = '{SETIMAGE: w=800&h=600&crop=1}
+	$NEWS_GRID_TEMPLATE['customcard2']['item'] = '{SETIMAGE: w=1024&h=768&crop=1}
 													<div class="col customcard2b">
 														<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url({NEWS_IMAGE: type=src});">		
 															<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
