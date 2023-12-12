@@ -206,7 +206,8 @@
 
 	$NEWS_GRID_TEMPLATE['customcard2']['item'] = '{SETIMAGE: w=800&h=600&crop=1}
 													<div class="col">
-														 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url("{NEWS_THUMBNAIL: src=1&w=0&h=0}");">
+														 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" 
+														 style="background-image: url({NEWS_IMAGE: type=src});">
 														 
 														
 															<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
