@@ -107,7 +107,7 @@
 	$NEWS_GRID_TEMPLATE['media-list']['featured'] = '<div class="col d-flex align-items-start">
 														{SETIMAGE: w=80&h=80&crop=1}
 													    <a class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" href="{NEWS_URL}">
-													    {NEWS_IMAGE: type=tag&class=media-object img-rounded&placeholder=1}
+													    {NEWS_IMAGE: type=tag&class=media-object rounded&placeholder=1}
 													    </a>
 														<div>
 															<h1 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h1>
@@ -120,10 +120,10 @@
 	$NEWS_GRID_TEMPLATE['media-list']['item'] = ' 	<div class="col d-flex align-items-start">
 														{SETIMAGE: w=80&h=80&crop=1}
 													    <a class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" href="{NEWS_URL}">
-													    {NEWS_IMAGE: type=tag&class=media-object img-rounded&placeholder=1}
+													    {NEWS_IMAGE: type=tag&class=media-object rounded&placeholder=1}
 													    </a>
 														<div>
-															<h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h3>
+															<h3 class="fw-bold mb-0 fs-5 text-body-emphasis"><a href="{NEWS_URL}">{NEWS_TITLE}</a></h3>
 															<p>{NEWS_SUMMARY: limit=60}</p>
 														</div>  		
 													</div>

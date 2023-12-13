@@ -298,7 +298,7 @@ li .hero-list-text {
 }
 
 .breadcrumb  {
-  padding: 4px 0px 6px 4px!important;
+  padding: 4px 0px 6px 10px!important;
 	
 }
 
@@ -583,6 +583,10 @@ pre {
 .customcard2b .card {
 border: 0px solid !important;
 background-position: center center;
+}
+
+.s-message  {
+	margin-top: 20px;
 }
 
 
