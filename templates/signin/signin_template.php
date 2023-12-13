@@ -16,7 +16,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 			<ul class="navbar-nav nav '.$loginlink.'">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="divider-vertical"></li>
-				<li class="nav-item dropdown">
+				<ul class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
 					<div class="dropdown-menu dropdown-menu-end col-sm-12" style="min-width:250px; padding: 15px; padding-bottom: 0px;">
 					
@@ -42,7 +42,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 				
 				</ul>
 	
-			</li>';
+			</ul>';
 
 
 
