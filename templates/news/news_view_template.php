@@ -17,26 +17,6 @@ $NEWS_VIEW_INFO = array(
 	'videos' 	=> array('title' => "Videos (experimental)", 				'description' => 'unused'),
 );
 
-$popupimage1 = 	"
-					<a href='{NEWS_IMAGE: item=1&type=src&class=img-rounded}' class='glightbox' data-gallery='{NEWS_TITLE}' data-glightbox='title:{NEWSDATE=short}&nbsp;|&nbsp;{NEWS_TITLE}&nbsp;|&nbsp;{NEWS_SUMMARY}'>
-					<img class='img-fluid' src='{NEWS_IMAGE: item=1&type=src}' alt='image'></a>
-				";
-$popupimage2 = 	"
-					<a href='{NEWS_IMAGE: item=2&type=src}' class='glightbox' data-gallery='{NEWS_TITLE}' data-glightbox='title:{NEWSDATE=short}&nbsp;|&nbsp;{NEWS_TITLE}&nbsp;|&nbsp;{NEWS_SUMMARY}'>
-					<img class='img-fluid' src='{NEWS_IMAGE: item=2&type=src}' alt='image'></a>
-				";
-$popupimage3 = 	"
-					<a href='{NEWS_IMAGE: item=3&type=src}' class='glightbox' data-gallery='{NEWS_TITLE}' data-glightbox='title:{NEWSDATE=short}&nbsp;|&nbsp;{NEWS_TITLE}&nbsp;|&nbsp;{NEWS_SUMMARY}'>
-					<img class='img-fluid' src='{NEWS_IMAGE: item=3&type=src}' alt='image'></a>
-				";
-$popupimage4 = 	"
-					<a href='{NEWS_IMAGE: item=4&type=src}' class='glightbox' data-gallery='{NEWS_TITLE}' data-glightbox='title:{NEWSDATE=short}&nbsp;|&nbsp;{NEWS_TITLE}&nbsp;|&nbsp;{NEWS_SUMMARY}'>
-					<img class='img-fluid' src='{NEWS_IMAGE: item=4&type=src}' alt='image'></a>
-				";
-$popupimage5 = 	"
-					<a href='{NEWS_IMAGE: item=5&type=src}' class='glightbox' data-gallery='{NEWS_TITLE}' data-glightbox='title:{NEWSDATE=short}&nbsp;|&nbsp;{NEWS_TITLE}&nbsp;|&nbsp;{NEWS_SUMMARY}'>
-					<img class='img-fluid' src='{NEWS_IMAGE: item=5&type=src}' alt='image'></a>
-				";
 				
 // Default
 
