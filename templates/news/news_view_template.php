@@ -24,48 +24,66 @@ $NEWS_VIEW_WRAPPER['default']['item']['NEWS_IMAGE'] = '{---}';
 $NEWS_VIEW_WRAPPER['default']['item']['NEWSRELATED'] = '<hr />{---}<hr />';
 
 $NEWS_VIEW_TEMPLATE['default']['caption'] = '{NEWS_TITLE}'; // null; // add a value to user tablerender()
-$NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=0}
+$NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=1280}
 
 	
 
-<div class="col-12 ">		
-	<div class="row row-cols-2 g-2 pb-2  px-1 mx-1 mb-1 border-bottom">	
-		<div class="col d-flex align-items-start justify-content-start"><small>&nbsp;{GLYPH=user} &nbsp;{NEWSAUTHOR}&nbsp;&nbsp;{GLYPH=clock}&nbsp;{NEWSDATE=short}</small></div>
-		<div class="col d-flex align-items-end justify-content-end"><small>{GLYPH=tags}&nbsp;{NEWSTAGS} &nbsp;&nbsp;{GLYPH=folder-open}&nbsp;{NEWSCATEGORY}&nbsp;</small></div>
-	</div	
-
-<hr>
-</div>
-<div class="row py-2">	
-
-<div class="col-12">
-	<span class="col-12 col-lg-6 float-start me-4 mb-4">
-		{NEWS_IMAGE: item=1&class=glightbox rounded img-fluid}
-		{NEWS_VIDEO: item=1&class=glightbox rounded img-fluid}
-	</span>
 	
+	<div class="row row-cols-2 g-0 pb-2  px-1 mx-0 mb-4 border-bottom">	
+		<div class="col d-flex align-items-start justify-content-start">
+			<small>&nbsp;{GLYPH=user} &nbsp;{NEWSAUTHOR}&nbsp;&nbsp;{GLYPH=clock}&nbsp;{NEWSDATE=short}</small>
+		</div>
+		<div class="col d-flex align-items-end justify-content-end"><small>
+			{GLYPH=tags}&nbsp;{NEWSTAGS} &nbsp;&nbsp;{GLYPH=folder-open}&nbsp;{NEWSCATEGORY}&nbsp;</small>
+		</div>
+	</div>	
 
-		<p class="fs-3 me-2">{NEWS_SUMMARY}</p>
-		<div class="card-text mb-auto me-2">{NEWS_BODY=body}</div>
+	
+	<div class="col-12 col-lg-6 float-start me-lg-4">
+		{NEWS_IMAGE: item=1&class=glightbox rounded img-fluid mb-4 mb-lg-0}
+		{NEWS_VIDEO: item=1&class=glightbox rounded img-fluid mb-4 mb-lg-0}
 	</div>
-</div>	
+	
 
-<div class="col-12">	
+		<p class="fs-5 me-2">{NEWS_SUMMARY}</p>
+		<div class="card-text mb-auto me-2">
+			{NEWS_BODY=body}
+		</div>
+
+
+
+
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">	
 	
-		<div class="col d-flex align-items-start">{NEWS_IMAGE: item=2&class=glightbox rounded img-fluid my-lg-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_IMAGE: item=3&class=glightbox rounded img-fluid my-lg-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_IMAGE: item=4&class=glightbox rounded img-fluid my-lg-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_IMAGE: item=5&class=glightbox rounded img-fluid my-lg-4}</div>
-	</div	
+		<div class="col d-flex align-items-start">
+			{NEWS_IMAGE: item=2&class=glightbox rounded img-fluid my-lg-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_IMAGE: item=3&class=glightbox rounded img-fluid my-lg-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_IMAGE: item=4&class=glightbox rounded img-fluid my-lg-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_IMAGE: item=5&class=glightbox rounded img-fluid my-lg-4}
+		</div>
+	</div>	
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4 py-2">	
-		<div class="col d-flex align-items-start">{NEWS_VIDEO: item=2&class=glightbox rounded img-fluid my-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_VIDEO: item=3&class=glightbox rounded img-fluid my-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_VIDEO: item=4&class=glightbox rounded img-fluid my-4}</div>
-		<div class="col d-flex align-items-start">{NEWS_VIDEO: item=5&class=glightbox rounded img-fluid my-4}</div>
-	</div	
-</div	
-<div class="col-12">	
+		<div class="col d-flex align-items-start">
+			{NEWS_VIDEO: item=2&class=glightbox rounded img-fluid my-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_VIDEO: item=3&class=glightbox rounded img-fluid my-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_VIDEO: item=4&class=glightbox rounded img-fluid my-4}
+		</div>
+		<div class="col d-flex align-items-start">
+			{NEWS_VIDEO: item=5&class=glightbox rounded img-fluid my-4}
+		</div>
+	</div>	
+
+
 	<div class="row">
 		<div class="col-12">		
 			<div class="card-text mb-auto">
@@ -74,12 +92,13 @@ $NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=0}
 			</div>	
 		</div>
 	 </div>	
-</div>	 
-<div class="col-12">
+
 	<div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 row-cols-lg-4 g-4 py-2">	
 		<div class="col d-flex align-items-start justify-content-start">
 			<div class="options hidden-print ">
-				<div class="btn-group">{NEWSCOMMENTLINK: glyph=comments}{PRINTICON}{ADMINOPTIONS}{SOCIALSHARE}</div>
+				<div class="btn-group">
+					{NEWSCOMMENTLINK: glyph=comments}{PRINTICON}{ADMINOPTIONS}{SOCIALSHARE}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -95,7 +114,7 @@ $NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=0}
 			</ul>
 		</div>
 	</div>
-</div>
+
 ';
 
 
