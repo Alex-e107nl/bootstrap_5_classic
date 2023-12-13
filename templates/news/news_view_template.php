@@ -53,7 +53,7 @@ $NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=1280}
 
 	<div class="col-12 float-start me-lg-4 mt-2">
 
-		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">	
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">	
 	
 				<div class="col d-flex align-items-start">
 				{NEWS_IMAGE: item=2&class=glightbox rounded img-fluid my-lg-4}
@@ -68,7 +68,7 @@ $NEWS_VIEW_TEMPLATE['default']['item'] = ' {SETIMAGE: w=1280}
 				{NEWS_IMAGE: item=5&class=glightbox rounded img-fluid my-lg-4}
 			</div>
 		</div>	
-		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">	
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4">	
 			<div class="col d-flex align-items-start">
 				{NEWS_VIDEO: item=2&class=glightbox rounded img-fluid my-4}
 			</div>
