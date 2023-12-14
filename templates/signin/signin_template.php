@@ -16,7 +16,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 			<ul class="navbar-nav nav '.$loginlink.'">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="nav-item">
-				<a href="#glbox" class="glightbox nav-link px-2" data-glightbox="width: 800; height: 800;">
+				<a href="#glbox" class="glightbox4 nav-link px-2" data-glightbox="width: 600; height: 500;">
                                         {LAN=LAN_LOGINMENU_51}
                                     </a>
 				</li>
