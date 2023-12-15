@@ -4,7 +4,7 @@
 if (!defined('e107_INIT')) { exit; }
 
 	e107::lan('theme');
-	e107::js("footer-inline", 	" const lightbox = GLightbox( {closeButton: false, closeOnOutsideClick: false}); 
+	e107::js("footer-inline", 	" const lightbox = GLightbox( {closeButton: false, closeOnOutsideClick: false, draggable: false}); 
 									window.addEventListener('load', () => lightbox.open(), { once: true }); 
 							"); 
  
