@@ -69,8 +69,15 @@ define("LAN_THEMEPREF_46", "<br>
 Welkomstbericht breedte tekstvlak, smal (col-lg-6) gemiddeld (col-lg-8) breed (col-lg-12).");
 define("LAN_THEMEPREF_47", "Aan");
 define("LAN_THEMEPREF_48", "Uit");
-define("LAN_THEMEPREF_49", "Aanmeld en login link");
+define("LAN_THEMEPREF_49", "Aanmeldlink");
 define("LAN_THEMEPREF_50", "Alt-5 Layout-8 button link kleur");
 define("LAN_THEMEPREF_51", "<br>
 Kies de kleur van de buttons die via ALT-5 (navigatie links) rechtsboven geplaatst kunnen worden, standaard BS kleuren.");
+define("LAN_THEMEPREF_52", "Inloggen met een modal scherm (popup login.php)");
+define("LAN_THEMEPREF_53", "Website breed Post-it reacties");
+define("LAN_THEMEPREF_54", "Schakel in je admin de geneste reacties uit!");
+define("LAN_THEMEPREF_55", "Inloglink met dropdownmenu");
+define("LAN_THEMEPREF_56", "Inloglink naar login.php");
+define("LAN_THEMEPREF_57", "Geen inloglink");
+define("LAN_THEMEPREF_58", "Kies hoe je inlogt op je website");
 

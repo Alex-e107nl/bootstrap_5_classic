@@ -69,7 +69,14 @@ define("LAN_THEMEPREF_46", "<br>
 Welcome message width text area, narrow (col-lg-6) medium (col-lg-8) wide (col-lg-12).");
 define("LAN_THEMEPREF_47", "On");
 define("LAN_THEMEPREF_48", "Off");
-define("LAN_THEMEPREF_49", "Signup and Signin link");
+define("LAN_THEMEPREF_49", "Signup link");
 define("LAN_THEMEPREF_50", "Alt-5 Layout-8 button link color");
 define("LAN_THEMEPREF_51", "<br>
 Choose the color of the buttons that can be placed via ALT-5 (navigation links) at the top right, standard BS colors.");
+define("LAN_THEMEPREF_52", "Log in with a modal screen (popup login.php)");
+define("LAN_THEMEPREF_53", "Website wide Post-it comments");
+define("LAN_THEMEPREF_54", "Disable nested comments in your admin!");
+define("LAN_THEMEPREF_55", "Login link with dropdown menu");
+define("LAN_THEMEPREF_56", "Login link to login.php");
+define("LAN_THEMEPREF_57", "No login link");
+define("LAN_THEMEPREF_58", "Choose how you log in to your website");

@@ -27,14 +27,13 @@ if(!defined('e107_INIT'))
 	        // e107::link('rel="preload" href="{THEME}fonts/myfont.woff2?v=2.2.0" as="font" type="font/woff2" crossorigin');  // added to <head>
             // e107::meta('apple-mobile-web-app-capable','yes');
 
-            $login_iframe  = e107::pref('theme', 'login_iframe', false);
-			
-
-            if(THEME_LAYOUT === "splash" && $login_iframe)
+/*          
+			$login_iframe  = e107::pref('theme', 'login_iframe', false);
+			if(THEME_LAYOUT === "splash" && $login_iframe)
             {
                 define('e_IFRAME', '0');
             }
-			
+*/			
 		//	e107::js('theme', 'js/bootstrap.bundle.min.js', 'jquery');		
 			e107::js('theme', 'js/colormode.js', 'jquery');
 			e107::js('theme', 'js/glightbox.min.js', 'jquery');
@@ -67,9 +66,6 @@ if(!defined('e107_INIT'))
 		 * note: this solves W3C validation issue and CSS style problems
 		 * use this carefully, mainly for custom menus, let decision on theme developers
 		 */
-		 
-		 
-		 
 		function remove_ptags($text = '') // FIXME this is a bug in e107 if this is required.
 		{
 
@@ -77,7 +73,6 @@ if(!defined('e107_INIT'))
 
 			return $text;
 		}
-
 
 		function tablestyle($caption, $text, $mode='', $options = array())
 		{
@@ -126,7 +121,7 @@ if(!defined('e107_INIT'))
 				$style = 'menu';
 			}
 
-	//		echo "\n<!-- tablestyle:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
+			//		echo "\n<!-- tablestyle:  style=" . $style . "  mode=" . $mode . "  UniqueId=" . varset($options['uniqueId']) . " -->\n\n";
 
 			if(deftrue('e_DEBUG'))
 			{
@@ -212,32 +207,32 @@ if(!defined('e107_INIT'))
 					echo '</div></div>';
 					break;
           
-            case 'splash':
-	            echo '<div class="container  justify-content-center text-left my-5" id="'.$mode.'">
+				case 'splash':
+					echo '<div class="container  justify-content-center text-left my-5" id="'.$mode.'">
 	                 <div class="row align-items-center">
 	                 <div class="card card-signin col-md-8 offset-md-3 " id="login-template"><div class="card-body">';
 
-                if(!empty($caption))
-                {
-  					echo '<h5 class="card-title text-center">' . $caption . '</h5>';
-  				}
+					if(!empty($caption))
+					{
+						echo '<h5 class="card-title text-center">' . $caption . '</h5>';
+					}
 
-  				echo $text;
+					echo $text;
 
-  				if(!empty($options['footer'])) // XXX @see news-months menu.
-  			    {
-  			        echo '<div class="card-footer">
+					if(!empty($options['footer'])) // XXX @see news-months menu.
+					{
+						echo '<div class="card-footer">
   		                   '.$options['footer'].'
   		                   </div>';
-  			    }
+					}
 
-  				echo '</div></div>
+					echo '</div></div>
 						</div></div>';
 
   					break;                
 
 
-			   default:
+					default:
 
 					// default style
 					// only if this always work, play with different styles

@@ -3,22 +3,42 @@
 
 if (!defined('e107_INIT')) { exit; }
 
+
+if (e107::pref('theme', 'loginmodal') == 1)
+	{
 	e107::lan('theme');
-	e107::js("footer-inline", 	" const lightbox = GLightbox( {closeButton: false, closeOnOutsideClick: false, draggable: false}); 
-									window.addEventListener('load', () => lightbox.open(), { once: true }); 
-							"); 
- 
-// Starter for v2. - Bootstrap 
-$LOGIN_TEMPLATE['page']['header'] = "
-
-<div id='inline-popup' style='display: none'>
-	<div id='login-template'>
-		<div class='center'>
-			{LOGO: login}
+	e107::js("footer-inline", 	" 
+		const lightbox = GLightbox( {closeButton: false, closeOnOutsideClick: false, draggable: false}); 
+		window.addEventListener('load', () => lightbox.open(), { once: true }); 
+	"); 
 		
-		</div>";
+	}
 
-$LOGIN_TEMPLATE['page']['body'] = '
+
+
+if (e107::pref('theme', 'loginmodal') == 1)
+	{
+	$LOGIN_TEMPLATE['page']['header'] = "
+
+	<div id='inline-popup' style='display: none'>
+		<div id='login-template'>
+			<div class='center'>
+				{LOGO: login}
+		
+			</div>";
+		
+	}
+	else
+	{
+	$LOGIN_TEMPLATE['page']['header'] = "
+		<div id='login-template'>
+			<div class='center'>
+				{LOGO: login}
+			</div>";
+	}
+	
+
+	$LOGIN_TEMPLATE['page']['body'] = '
 		{LOGIN_TABLE_LOGINMESSAGE}
         <h2 class="form-signin-heading">{LAN=LOGIN_4}</h2>';
 
@@ -36,19 +56,18 @@ $LOGIN_TEMPLATE['page']['body'] = '
 	  $LOGIN_TEMPLATE['page']['body'] .= "<span>";
 	}
 
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_USERNAME'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_PASSWORD'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_SECIMG'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_TEXTBOC'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_REMEMBERME'] = "<div class='form-group checkbox'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_SUBMIT'] = "{---}";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_FOOTER_USERREG'] = "<div class='form-group'>{---}</div>";
-$LOGIN_WRAPPER['page']['LOGIN_TABLE_LOGINMESSAGE'] = "<div class='alert alert-danger'>{---}</div>";
+	if (e107::pref('theme', 'loginmodal') == 1)
+	{
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_USERNAME'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_PASSWORD'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_SECIMG'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_TEXTBOC'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_REMEMBERME'] = "<div class='form-group checkbox'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SUBMIT'] = "{---}";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_FOOTER_USERREG'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_LOGINMESSAGE'] = "<div class='alert alert-danger'>{---}</div>";
 
-
-// $LOGIN_WRAPPER['page']['LOGIN_TABLE_FPW_LINK'] = "<div class='form-group'>{---}</div>";
-
-$LOGIN_TEMPLATE['page']['body'] .= '
+	$LOGIN_TEMPLATE['page']['body'] .= '
         {LOGIN_TABLE_USERNAME}<br />
         {LOGIN_TABLE_PASSWORD}<br />
         {SOCIAL_LOGIN: size=3x}
@@ -56,17 +75,47 @@ $LOGIN_TEMPLATE['page']['body'] .= '
         {LOGIN_TABLE_REMEMBERME} <br />
 		
 		<div class="form-group"> {LOGIN_TABLE_SUBMIT=large}
-			<a class="btn btn-primary btn-large btn-lg button float-end" href="'.SITEURL.'" class="nav-link px-2">'.LAN_THEME_06.'</a>       
+			<a class="btn btn-primary btn-large btn-lg button float-end" href="'.SITEURL.'"> 
+			'.LAN_THEME_06.'</a>       
          </div>
 			<a href="#inline-popup" class="glightbox" data-glightbox="width: 600; height: auto;"  style="display: none">'.LAN_LOGIN_9.'</a>		
 		';
 
-$LOGIN_TEMPLATE['page']['footer'] =  "
+	$LOGIN_TEMPLATE['page']['footer'] =  "
 		<div class='login-page-footer'>
 		<button type='button' class='btn btn-bd-primary py-2 btn-floating animated fadeIn animate__delay-2s' id='btn-back-to-top'><i class='fas fa-arrow-up'></i></button>
 		</div>";
+		
+	}
+	else
+	{
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_USERNAME'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_PASSWORD'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_SECIMG'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SECIMG_TEXTBOC'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_REMEMBERME'] = "<div class='form-group checkbox'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_SUBMIT'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_FOOTER_USERREG'] = "<div class='form-group'>{---}</div>";
+	$LOGIN_WRAPPER['page']['LOGIN_TABLE_LOGINMESSAGE'] = "<div class='alert alert-danger'>{---}</div>";
+
+	$LOGIN_TEMPLATE['page']['body'] .= '
+        {LOGIN_TABLE_USERNAME}
+        {LOGIN_TABLE_PASSWORD}
+        {SOCIAL_LOGIN: size=3x}
+		{LOGIN_TABLE_SECIMG_SECIMG} {LOGIN_TABLE_SECIMG_TEXTBOC}
+        {LOGIN_TABLE_REMEMBERME}
+        {LOGIN_TABLE_SUBMIT=large}
+
+	';
+
+	$LOGIN_TEMPLATE['page']['footer'] =  "
+			<div class='login-page-footer'>
+				<div class='login-page-signup-link'><p>{LOGIN_TABLE_SIGNUP_LINK}</p></div>
+				<div class='login-page-fpw-link'><p>{LOGIN_TABLE_FPW_LINK}</p></div>
+			</div>
+	</div>
+	";
 	
-// <div class='login-page-signup-link'><p>{LOGIN_TABLE_SIGNUP_LINK}</p></div>
-	//			<div class='login-page-fpw-link'><p>{LOGIN_TABLE_FPW_LINK}</p></div>
-
-
+	}
+	
+	
