@@ -120,6 +120,7 @@ function backToTop() {
 
             var lightboxInlineIframe = GLightbox({
                 selector: '.glightbox4'
+						
             });
 
 })();

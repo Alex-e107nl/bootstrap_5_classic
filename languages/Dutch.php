@@ -12,3 +12,4 @@ define("LAN_THEME_02", "Auto");
 define('LAN_THEME_03', 'Je bent ingelogd en kunt het gehele artikel lezen.');
 define('LAN_THEME_04', 'Om het gehele bericht te lezen graag eerst [inloggen].');
 define('LAN_THEME_05', 'Wanneer je niet bent geregistreerd, kun je je [hier] aanmelden.');
+define('LAN_THEME_06', 'Terug');

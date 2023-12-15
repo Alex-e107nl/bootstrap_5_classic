@@ -3,6 +3,14 @@
 // Do not use constants.. use {LAN=xxx} instead.
 // Template compatible with Bootstrap 5 only.
 
+/*
+<li class="nav-item">
+				<a href="#glbox" class="glightbox4 nav-link px-2" data-glightbox="width: 600; height: 500;">
+                                        {LAN=LAN_LOGINMENU_51}
+                                    </a>
+				</li>
+				*/
+
 $SIGNIN_TEMPLATE = [];
 
 
@@ -16,7 +24,7 @@ $SIGNIN_TEMPLATE['signin'] = '
 			<ul class="navbar-nav nav '.$loginlink.'">
 				{SIGNIN_SIGNUP_HREF}
 				<li class="nav-item">
-				<a href="#glbox" class="glightbox4 nav-link px-2" data-glightbox="width: 600; height: 500;">
+				<a href="'.SITEURL.'login.php" class="nav-link px-2">
                                         {LAN=LAN_LOGINMENU_51}
                                     </a>
 				</li>
