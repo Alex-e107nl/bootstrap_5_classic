@@ -26,17 +26,6 @@ if (e107::pref('theme', 'loginmodal') == 1)
 				{LOGO: login}
 		
 			</div>";
-		
-	}
-	else
-	{
-	$LOGIN_TEMPLATE['page']['header'] = "
-		<div id='login-template'>
-			<div class='center'>
-				{LOGO: login}
-			</div>";
-	}
-	
 
 	$LOGIN_TEMPLATE['page']['body'] = '
 		{LOGIN_TABLE_LOGINMESSAGE}
@@ -55,6 +44,39 @@ if (e107::pref('theme', 'loginmodal') == 1)
 	{
 	  $LOGIN_TEMPLATE['page']['body'] .= "<span>";
 	}
+		
+	}
+	
+	else
+		
+	{
+	$LOGIN_TEMPLATE['page']['header'] = "
+		<div id='login-template'>
+			<div class='center'>
+				{LOGO: login}
+			</div>";
+	$LOGIN_TEMPLATE['page']['body'] = '
+		{LOGIN_TABLE_LOGINMESSAGE}
+        <h2 class="form-signin-heading">{LAN=LOGIN_4}</h2>';
+
+	if (e107::pref('core', 'password_CHAP') == 2)
+	{
+		$LOGIN_TEMPLATE['page']['body'] .= "
+    	<div style='text-align: center' id='nologinmenuchap'>"."Javascript must be enabled in your browser if you wish to log into this site"."
+		</div>
+		
+    	<span style='display:none' id='loginmenuchap'>";
+		
+	}
+	else
+	{
+	  $LOGIN_TEMPLATE['page']['body'] .= "<span>";
+	}
+	
+	}
+	
+
+
 
 	if (e107::pref('theme', 'loginmodal') == 1)
 	{
@@ -76,14 +98,20 @@ if (e107::pref('theme', 'loginmodal') == 1)
 		
 		<div class="form-group"> {LOGIN_TABLE_SUBMIT=large}
 			<a class="btn btn-primary btn-large btn-lg button float-end" href="'.SITEURL.'"> 
-			'.LAN_THEME_06.'</a>       
+			'.LAN_THEME_06.'</a>    
+			
+			<div class="login-page-signup-link mt-3"><p>{LOGIN_TABLE_SIGNUP_LINK}</p></div>
+			<div class="login-page-fpw-link"><p>{LOGIN_TABLE_FPW_LINK}</p></div>			
          </div>
 			<a href="#inline-popup" class="glightbox" data-glightbox="width: 600; height: auto;"  style="display: none">'.LAN_LOGIN_9.'</a>		
+			
+			
 		';
 
 	$LOGIN_TEMPLATE['page']['footer'] =  "
 		<div class='login-page-footer'>
 		<button type='button' class='btn btn-bd-primary py-2 btn-floating animated fadeIn animate__delay-2s' id='btn-back-to-top'><i class='fas fa-arrow-up'></i></button>
+						
 		</div>";
 		
 	}
