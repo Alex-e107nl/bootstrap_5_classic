@@ -100,8 +100,8 @@ if (e107::pref('theme', 'loginmodal') == 1)
 			<a class="btn btn-primary btn-large btn-lg button float-end" href="'.SITEURL.'"> 
 			'.LAN_THEME_06.'</a>    
 			
-			<div class="login-page-signup-link mt-3"><p>{LOGIN_TABLE_SIGNUP_LINK}</p></div>
-			<div class="login-page-fpw-link"><p>{LOGIN_TABLE_FPW_LINK}</p></div>			
+			<div class="login-page-signup-link mt-3">{LOGIN_TABLE_SIGNUP_LINK}</div>
+			<div class="login-page-fpw-link">{LOGIN_TABLE_FPW_LINK}</div>			
          </div>
 			<a href="#inline-popup" class="glightbox" data-glightbox="width: 600; height: auto;"  style="display: none">'.LAN_LOGIN_9.'</a>		
 			
