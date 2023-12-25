@@ -21,22 +21,23 @@
 
 $sitetheme = e107::getPref('sitetheme');
 $alt5color  = e107::pref('theme', 'alt5color');
+$linkcolor  = e107::pref('theme', 'linkcolor');
 
 // TEMPLATE FOR {NAVIGATION=main}
 $NAVIGATION_TEMPLATE['main']['start'] = "<ul class='navbar-nav nav {NAV_CLASS}'>";
 
 // Main Link
-$NAVIGATION_TEMPLATE['main']['item'] = "<li class='nav-item'><a class='nav-link  px-2' role='button' href='{NAV_LINK_URL}' {NAV_LINK_OPEN} title='{NAV_LINK_DESCRIPTION}'>{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+$NAVIGATION_TEMPLATE['main']['item'] = "<li class='nav-item'><a class='nav-link  px-2 ".$linkcolor." ' role='button' href='{NAV_LINK_URL}' {NAV_LINK_OPEN} title='{NAV_LINK_DESCRIPTION}'>{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
 
 // Main Link - active state
-$NAVIGATION_TEMPLATE['main']['item_active'] = "<li class='nav-item'><a class='nav-link px-2 active' aria-current='page' role='button' href='{NAV_LINK_URL}' title='{NAV_LINK_DESCRIPTION}'>{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+$NAVIGATION_TEMPLATE['main']['item_active'] = "<li class='nav-item'><a class='nav-link px-2 ".$linkcolor." active' aria-current='page' role='button' href='{NAV_LINK_URL}' title='{NAV_LINK_DESCRIPTION}'>{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
 
 $NAVIGATION_TEMPLATE['main']['end'] = '</ul>';
 
 // Main Link which has a sub menu.
 $NAVIGATION_TEMPLATE['main']['item_submenu'] = "
 	<li class='nav-item dropdown'>
-		<a class='nav-link dropdown-toggle px-2' role='button' data-toggle='dropdown' data-bs-toggle='dropdown' id='navbarDropdownMenuLink-{NAV_LINK_ID}' data-target='#' aria-haspopup='true' aria-expanded='false' href='#' title='{NAV_LINK_DESCRIPTION}'>
+		<a class='nav-link dropdown-toggle px-2 ".$linkcolor." ' role='button' data-toggle='dropdown' data-bs-toggle='dropdown' id='navbarDropdownMenuLink-{NAV_LINK_ID}' data-target='#' aria-haspopup='true' aria-expanded='false' href='#' title='{NAV_LINK_DESCRIPTION}'>
 		 {NAV_LINK_ICON}{NAV_LINK_NAME}
 		</a>
 		{NAV_LINK_SUB}
@@ -45,7 +46,7 @@ $NAVIGATION_TEMPLATE['main']['item_submenu'] = "
 
 // Main Link which has a sub menu - active state.
 $NAVIGATION_TEMPLATE['main']['item_submenu_active'] = '
-	<li class="nav-item dropdown px-2 active {NAV_LINK_IDENTIFIER}">
+	<li class="nav-item dropdown px-2 active ".$linkcolor." {NAV_LINK_IDENTIFIER}">
 		<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" id="navbarDropdownMenuLink-{NAV_LINK_ID}" aria-haspopup="true" aria-expanded="true" data-target="#" href="#">
 		 {NAV_LINK_ICON}{NAV_LINK_NAME}
 		</a>
@@ -230,17 +231,17 @@ $NAVIGATION_TEMPLATE['alt6']['submenu_lowerend'] = "";
 
 $NAVIGATION_TEMPLATE['alt7']['start'] = "";
 $NAVIGATION_TEMPLATE['alt7']['item'] = "<li>
- <a class='dropdown-item ' role='button' href='{NAV_LINK_URL}' {NAV_LINK_OPEN} >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+ <a class='dropdown-item' href='{NAV_LINK_URL}' {NAV_LINK_OPEN} >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
 $NAVIGATION_TEMPLATE['alt7']['item_active'] = "<li {NAV_LINK_OPEN}>
-	<a class='dropdown-item active' role='button' href='{NAV_LINK_URL}' >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
+	<a class='dropdown-item active' href='{NAV_LINK_URL}' >{NAV_LINK_ICON}{NAV_LINK_NAME}</a></li>";
 $NAVIGATION_TEMPLATE['alt7']['end'] = '';
 
 $NAVIGATION_TEMPLATE['alt8']['start'] = "<span class='d-inline-flex gap-1'>
 ";
 $NAVIGATION_TEMPLATE['alt8']['item'] = "
- <a class='btn ".$alt5color."' href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
+ <a class='btn btn-sm ".$alt5color."' href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
 $NAVIGATION_TEMPLATE['alt8']['item_active'] = "
-<a class='btn ".$alt5color." active'  href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
+<a class='btn btn-sm ".$alt5color." active'  href='{NAV_LINK_URL}' {NAV_LINK_OPEN}> {NAV_LINK_ICON}{NAV_LINK_NAME}</a>";
 $NAVIGATION_TEMPLATE['alt8']['end'] = '</span>';
 
 $NAVIGATION_INFO['main']['title'] = 'Main - Top Default';

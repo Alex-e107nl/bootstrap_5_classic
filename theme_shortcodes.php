@@ -11,7 +11,6 @@
 */
 
 
-
 /**
  *
  */
@@ -28,15 +27,17 @@ var $override = true;
 	function sc_header()
 	{
 		$pref = e107::pref('theme', 'header_type');
-
+		$headerbg  = e107::pref('theme', 'headerbg');
+		
+		
 		switch ($pref)
 		{
 			case '01':
 				default:
-				$text = ' 	<header class="p-0 bg-body-tertiary border-bottom {STICKYHEADER}">
+				$text = ' 	<header class="p-0 '.$headerbg.' transition border-bottom {STICKYHEADER}">
 								<div class="container-fluid col-12 col-xxl-8 mx-auto">
 									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-start" aria-label="navbars example">
-										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3 link-body-emphasis text-decoration-none">
+										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3 text-decoration-none">
 										{BOOTSTRAP_BRANDING}
 										</a>
 
@@ -64,10 +65,10 @@ var $override = true;
 				break;
 
 			case '02':
-				$text = '	<header class="p-0  bg-body-tertiary border-bottom {STICKYHEADER}">
+				$text = '	<header class="p-0 '.$headerbg.' transition border-bottom {STICKYHEADER}">
 								<div class="container-fluid col-12 col-xxl-8 mx-auto">
 									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-start" aria-label="navbars example">
-										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3 link-body-emphasis text-decoration-none">
+										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3   text-decoration-none">
 										{BOOTSTRAP_BRANDING}
 										</a>
 										
@@ -98,10 +99,10 @@ var $override = true;
 				break;
 				
 			case '03':
-				$text = '<nav class="py-1 bg-body-tertiary border-bottom mb-0 {STICKYHEADER}">
+				$text = '<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
-								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none d-lg-none">
+								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto text-decoration-none d-lg-none">
 									{BOOTSTRAP_BRANDING}
 								</a>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,9 +124,9 @@ var $override = true;
 								</div>
 							</div>
 						</nav>
-						<header class="py-2 mb-0 border-bottom">
+						<header class="py-2 mb-0 border-bottom bg-body-secondary">
 							<div class="container-fluid col-lg-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
-								<a href="{SITEURL}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none d-none d-lg-block">
+								<a href="{SITEURL}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none d-none d-lg-block">
 									{BOOTSTRAP_BRANDING}
 								</a>
 								<div class="my-auto py-2">
@@ -142,9 +143,9 @@ var $override = true;
 				
 			case '04':
 		
-				$text = '<header class="py-2 mb-0 border-bottom">
+				$text = '<header class="py-2 mb-0 border-bottom ">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
-								<a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none me-auto">
+								<a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto text-decoration-none me-auto">
 									{BOOTSTRAP_BRANDING}
 								</a>
 									<div class="ms-auto my-auto">
@@ -153,7 +154,7 @@ var $override = true;
 							</div>
 						</header>
 	
-						<nav class="py-1 bg-body-tertiary border-bottom mb-0 {STICKYHEADER}">
+						<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example>
 								  <a class="navbar-brand d-lg-none" href="#">{SITENAME}</a>
@@ -183,7 +184,7 @@ var $override = true;
 				break;	
 				
 			case '05':
-				$text = '<nav class="navbar navbar-expand-lg p-1  bg-body-tertiary border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
+				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
 				
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								
@@ -216,7 +217,7 @@ var $override = true;
 				break;
 			
 			case '06':
-				$text = '<nav class="navbar navbar-expand-lg p-1  bg-body-tertiary border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
+				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								
 								<a href="{SITEURL}" class="navbar-brand">
@@ -250,10 +251,10 @@ var $override = true;
 			case '07':
 		
 				$text = '<div class="{STICKYHEADER}">
-						<nav class="py-1 bg-body-tertiary border-bottom mb-0 {STICKYHEADER}">
+						<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
-								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none d-lg-none">
+								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto  text-decoration-none d-lg-none">
 									{BOOTSTRAP_BRANDING}
 								</a>
 									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
@@ -275,7 +276,7 @@ var $override = true;
 						</nav>
 						<header class="py-2 mb-0 border-bottom bg-body">
 							<div class="container-fluid col-lg-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
-								<a href="{SITEURL}" class="py-2 d-flex align-items-center mb-0 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none d-none d-lg-block">
+								<a href="{SITEURL}" class="py-2 d-flex align-items-center mb-0 mb-lg-0 me-lg-auto  text-decoration-none d-none d-lg-block">
 									{BOOTSTRAP_BRANDING}
 								</a>
 								<div class="my-auto">
@@ -298,7 +299,7 @@ var $override = true;
 				$text = '<div class="{STICKYHEADER}">
 						<header class="py-2 mb-0 border-bottom bg-body">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
-								<a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none me-auto">
+								<a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto text-decoration-none me-auto">
 									{BOOTSTRAP_BRANDING}
 								</a>
 								
@@ -318,7 +319,7 @@ var $override = true;
 							</div>
 						</header>
 	
-						<nav class="py-1 bg-body-tertiary border-bottom mb-0">
+						<nav class="py-1 '.$headerbg.' border-bottom mb-0">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
 									<a class="navbar-brand d-lg-none" href="#">{SITENAME}</a>
@@ -439,7 +440,7 @@ var $override = true;
 								</div>
 
 								<div class="col-12 col-lg-2 text-center text-lg-center mb-3 mb-md-0 me-md-auto">
-									<a href="{SITEURL}" class="link-body-emphasis text-decoration-none d-none d-lg-block">
+									<a href="{SITEURL}" class="text-decoration-none d-none d-lg-block">
 										{BOOTSTRAP_BRANDING}
 									</a>
 								</div>
@@ -552,6 +553,7 @@ var $override = true;
 	function sc_bootstrap_branding()
 	{
 		$pref = e107::pref('theme', 'branding');
+		$linkcolor  = e107::pref('theme', 'linkcolor');
 
 		switch ($pref)
 		{
@@ -562,14 +564,14 @@ var $override = true;
 				break;
 
 			case 'sitenamelogo':
-				return "" . e107::getParser()->parseTemplate('{SITELOGO: h=80}', true) . "<span class='mt-2'>" . SITENAME . "</span>";
+				return "" . e107::getParser()->parseTemplate('{SITELOGO: h=80}', true) . "<span class='".$linkcolor." fs-4'>" . SITENAME . "</span>";
 
 				break;
 
 			case 'sitename':
 			default:
 
-				return "<span class='d-none d-lg-block'>" . SITENAME . "</span>";
+				return "<span class='".$linkcolor." fs-4'>" . SITENAME . "</span>";
 
 				break;
 		}
@@ -634,16 +636,19 @@ var $override = true;
 			return e107::getParser()->parseTemplate('');
 		}
 	}
+	
 
 	public function sc_sitesearch()
 	{
-		$text = '<form class="d-flex col-12 col-lg-auto mb-lg-0" method="get" action="' . e_HTTP . 'search.php">
+		$text = '<form class="d-flex col-12 col-lg-auto mb-lg-0 mx-1" method="get" action="' . e_HTTP . 'search.php">
+		
+		<div class="input-group">
 		<input type="hidden" name="r" value="0" role="search" />
 		
         <input type="text" class="form-control" name="q" placeholder="' . LAN_SEARCH . '" title="' . LAN_SEARCH . '" id="q">
 
-        <button class="btn btn-light btn-sm " name="s"  type="submit" title="' . LAN_SEARCH . '"><i class="fas fa-magnifying-glass"></i></button>
-      	</form>';
+        <button class="btn btn-dark btn-sm " name="s"  type="submit" title="' . LAN_SEARCH . '"><i class="fas fa-magnifying-glass"></i></button>
+      	</div></form>';
 		
 		return $text;
 	}
@@ -729,7 +734,7 @@ var $override = true;
 /* {SIGNIN_PM_NAV} */
 	function sc_signin_pm_nav($parm = null)
 	{
-
+		$linkcolor  = e107::pref('theme', 'linkcolor');
 		e107::includeLan(e_PLUGIN . 'pm/languages/' . e_LANGUAGE . '.php');
 		require_once(e_PLUGIN . "pm/pm_func.php");
 
@@ -755,12 +760,12 @@ var $override = true;
 
 		if (!empty($mbox['inbox']['new']))
 		{
-			$count = "<span class='label label-warning'>" . $mbox['inbox']['new'] . "</span>";
-			$icon = $tp->toGlyph('fa-envelope');
+			$count = "<span class='link-danger'>" . $mbox['inbox']['new'] . "</span>";
+			$icon = $tp->toGlyph('fas fa-envelope-open-text');
 		}
 		else
 		{
-			$icon = $tp->toGlyph('fa-envelope-o');
+			$icon = $tp->toGlyph('fas fa-envelope');
 			$count = '';
 		}
 
@@ -770,7 +775,7 @@ var $override = true;
 		$urlCompose = e107::url('pm', 'index', '', array('query' => array('mode' => 'send')));
 
 		return '<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle link-body-emphasis px-2" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" data-bs-target="#pm-nav" aria-haspopup="true" aria-expanded="false">' . $icon . $count . ' <span><i class="lni lni-chevron-down"></i></span></a>
+					<a class="nav-link dropdown-toggle px-2 '.$linkcolor.' " role="button" data-toggle="dropdown" data-bs-toggle="dropdown" data-bs-target="#pm-nav" aria-haspopup="true" aria-expanded="false">' . $icon . $count . ' <span><i class="lni lni-chevron-down"></i></span></a>
 					
 					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="pm-nav">			
 						<li><a class="dropdown-item" href="' . $urlInbox . '">' . LAN_PLUGIN_PM_INBOX . '</a></li>

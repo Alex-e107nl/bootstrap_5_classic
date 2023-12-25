@@ -80,4 +80,29 @@ define("LAN_THEMEPREF_55", "Inloglink met dropdownmenu");
 define("LAN_THEMEPREF_56", "Inloglink naar login.php");
 define("LAN_THEMEPREF_57", "Geen inloglink");
 define("LAN_THEMEPREF_58", "Kies hoe je inlogt op je website");
+define("LAN_THEMEPREF_59", "Tertiary");
+define("LAN_THEMEPREF_60", "Primary subtle");
+define("LAN_THEMEPREF_61", "Secondary subtle");
+define("LAN_THEMEPREF_62", "Success subtle");
+define("LAN_THEMEPREF_63", "Info subtle");
+define("LAN_THEMEPREF_64", "Warning subtle");
+define("LAN_THEMEPREF_65", "Danger subtle");
+define("LAN_THEMEPREF_66", "Light subtle");
+define("LAN_THEMEPREF_67", "Dark");
+define("LAN_THEMEPREF_68", "Dark subtle");
+define("LAN_THEMEPREF_69", "Body-secondary");
+define("LAN_THEMEPREF_70", "Body-tertiary");
+define("LAN_THEMEPREF_71", "Light subtle");
+define("LAN_THEMEPREF_72", "Body");
+define("LAN_THEMEPREF_73", "Black");
+define("LAN_THEMEPREF_74", "White");
+define("LAN_THEMEPREF_75", "Transparant");
+define("LAN_THEMEPREF_76", "Header achtergrond kleur");
+define("LAN_THEMEPREF_77", "<br>
+Kies de kleur van de header achtergrond (navigatie-top), standaard BS kleuren.");
+define("LAN_THEMEPREF_78", "Navigatiebalk link kleur");
+define("LAN_THEMEPREF_79", "<br>
+Kies de kleur van alle links in de navigatiebalk, zorg voor voldoende contrast, standaard BS kleuren.");
+
+
 

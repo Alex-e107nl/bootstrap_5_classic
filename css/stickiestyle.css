@@ -4,9 +4,14 @@
 .stickiebody {
   font-family:arial,sans-serif;
   font-size:12pt;
-  color:#fff;
+  color: var(--bs-dark-text-emphasis);
 }
-
+.stickiebody a  {
+  color: var(--bs-warning-emphasis);
+}
+.stickiebody a:hover  {
+  color: var(--bs-emphasis-color);
+}
 .stickiebody .comment-box {
 	margin: 0em;
 }
@@ -35,7 +40,7 @@
 }
 .stickiebody ul li .stickie {
   text-decoration:none;
-  color: var(--bs-body-color);
+  color: var(--bs-dark-text-emphasis);
   background:  var(--bs-warning-bg-subtle);
   display:block;
   height:14em;
@@ -106,7 +111,7 @@
 }
 .stickiebody ol{text-align:center;}
 .stickiebody ol li{display:inline;padding-right:1em;}
-.stickiebody ol li .stickie {color:#fff;}
+.stickiebody ol li .stickie {color: var(--bs-dark-text-emphasis);}
 
 .comment-options .e-ajax  {
   margin-left: 6px!important;

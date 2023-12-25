@@ -29,6 +29,28 @@ $(function($) {
   
 });
 
+/**
+* Remove header transparency 300px scrolling
+*
+*/
+if (true) {
+    $(document).ready(function () {
+
+        var header = $(".bg-transparent"); 
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 300) {
+                header.removeClass('bg-transparent').addClass("bg-light");
+                header.addClass("transition");
+            } else {
+                header.removeClass("bg-light").addClass('bg-transparent');
+                header.addClass("transition");
+            }
+        });
+
+    });
+}
 
 (function() {
   "use strict";

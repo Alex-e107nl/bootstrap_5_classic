@@ -25,8 +25,31 @@
         <library name="animate.css" scope="wysiwyg" />
 	</libraries>
 	<stylesheets>
-	   	<css file="css/style_default_color.css" default="true" name="BS_5.3.2 standard color" thumbnail='images/settings_bs5_c.png' scope='front' />
-		<css file="css/style_taupe_color.css" default="true" name="BS_5.3.2 taupe color" thumbnail='images/settings_bs5_c.png' scope='front' />
+	   	<css file="css/style_default_color.css" default="true" name="BS_5.3.2 standard color" thumbnail='images/BS_5_classic.png' scope='front' />
+		<css file="css/style_taupe_color.css" default="false" name="BS_5.3.2 taupe color" thumbnail='images/settings_bs5_c.png' scope='front' />
+		<css file="css/bootswatch/cerulean.min.css" default="false" name="Bootswatch Cerulan" thumbnail='images/bootswatch/cerulean.png' scope='front' />
+		<css file="css/bootswatch/cyborg.min.css" default="false" name="Bootswatch Cyborg" thumbnail='images/bootswatch/cyborg.png' scope='front' />
+		<css file="css/bootswatch/darkly.min.css" default="false" name="Bootswatch Darkly" thumbnail='images/bootswatch/darkly.png' scope='front' />
+		<css file="css/bootswatch/flatly.min.css" default="false" name="Bootswatch Flatly" thumbnail='images/bootswatch/flatly.png' scope='front' />
+		<css file="css/bootswatch/journal.min.css" default="false" name="Bootswatch Journal" thumbnail='images/bootswatch/journal.png' scope='front' />
+		<css file="css/bootswatch/litera.min.css" default="false" name="Bootswatch Litera" thumbnail='images/bootswatch/litera.png' scope='front' />
+		<css file="css/bootswatch/lux.min.css" default="false" name="Bootswatch Lux" thumbnail='images/bootswatch/lux.png' scope='front' />
+		<css file="css/bootswatch/materia.min.css" default="false" name="Bootswatch Materia" thumbnail='images/bootswatch/materia.png' scope='front' />
+		<css file="css/bootswatch/minty.min.css" default="false" name="Bootswatch Minty" thumbnail='images/bootswatch/materia.png' scope='front' />
+		<css file="css/bootswatch/morph.min.css" default="false" name="Bootswatch Morph" thumbnail='images/bootswatch/morph.png' scope='front' />	
+		<css file="css/bootswatch/pulse.min.css" default="false" name="Bootswatch Pulse" thumbnail='images/bootswatch/pulse.png' scope='front' />		
+		<css file="css/bootswatch/quartz.min.css" default="false" name="Bootswatch Quartz" thumbnail='images/bootswatch/quartz.png' scope='front' />
+		<css file="css/bootswatch/sandstone.min.css" default="false" name="Bootswatch Sandstone" thumbnail='images/bootswatch/sandstone.png' scope='front' />
+		<css file="css/bootswatch/simplex.min.css" default="false" name="Bootswatch Sinplex" thumbnail='images/bootswatch/simplex.png' scope='front' />
+		<css file="css/bootswatch/sketchy.min.css" default="false" name="Bootswatch Sketchy" thumbnail='images/bootswatch/sketchy.png' scope='front' />
+		<css file="css/bootswatch/slate.min.css" default="false" name="Bootswatch Slate" thumbnail='images/bootswatch/slate.png' scope='front' />
+		<css file="css/bootswatch/solar.min.css" default="false" name="Bootswatch Solar" thumbnail='images/bootswatch/solar.png' scope='front' />
+		<css file="css/bootswatch/spacelab.min.css" default="false" name="Bootswatch Spacelab" thumbnail='images/bootswatch/spacelab.png' scope='front' />
+		<css file="css/bootswatch/superhero.min.css" default="false" name="Bootswatch Superhero" thumbnail='images/bootswatch/superhero.png' scope='front' />
+		<css file="css/bootswatch/united.min.css" default="false" name="Bootswatch United" thumbnail='images/bootswatch/united.png' scope='front' />
+		<css file="css/bootswatch/vapor.min.css" default="false" name="Bootswatch Vapor" thumbnail='images/bootswatch/vapor.png' scope='front' />
+		<css file="css/bootswatch/yeti.min.css" default="false" name="Bootswatch Yeti" thumbnail='images/bootswatch/yeti.png' scope='front' />
+		<css file="css/bootswatch/zephyr.min.css" default="false" name="Bootswatch Zephyr" thumbnail='images/bootswatch/zephyr.png' scope='front' />		
 	</stylesheets>
 	<screenshots>
 		<image>images/BS_5_classic.png</image>

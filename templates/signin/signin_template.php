@@ -16,10 +16,10 @@ $SIGNIN_TEMPLATE = [];
 
 $sitetheme = e107::getPref('sitetheme');
 $signuplink  = e107::pref('theme', 'signuplink');
+$linkcolor  = e107::pref('theme', 'linkcolor');
 
 
-
-$SIGNIN_WRAPPER['signin']['SIGNIN_SIGNUP_HREF'] = '<li class="nav-item '.$signuplink.'"><a class="nav-link px-2" href="{---}">{LAN=LAN_LOGINMENU_3}</a></li>';
+$SIGNIN_WRAPPER['signin']['SIGNIN_SIGNUP_HREF'] = '<li class="nav-item '.$linkcolor.' '.$signuplink.'"><a class="nav-link px-2" href="{---}">{LAN=LAN_LOGINMENU_3}</a></li>';
 
 
 
@@ -29,7 +29,7 @@ if (e107::pref('theme', 'loginlink') == 0)
 		<ul class="navbar-nav nav">
 			{SIGNIN_SIGNUP_HREF}
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
+				<a class="nav-link dropdown-toggle px-2 '.$linkcolor.' " data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
 				<div id="glbox" class="dropdown-menu dropdown-menu-end col-sm-12" style="min-width:250px; padding: 15px; padding-bottom: 0px;">
 					{SIGNIN_FORM=start}
 					<p>{SIGNIN_INPUT_USERNAME}</p>
@@ -58,7 +58,7 @@ if (e107::pref('theme', 'loginlink') == 1)
 		<ul class="navbar-nav nav">
 			{SIGNIN_SIGNUP_HREF}
 			<li class="nav-item">
-				<a href="'.SITEURL.'login.php" class="nav-link px-2">{LAN=LAN_LOGINMENU_51}</a>
+				<a href="'.SITEURL.'login.php" class="nav-link px-2 '.$linkcolor.'">{LAN=LAN_LOGINMENU_51}</a>
 			</li>
 			
 		</ul>';
@@ -72,7 +72,7 @@ else
 		<ul class="navbar-nav nav d-none">
 			{SIGNIN_SIGNUP_HREF}
 			<li class="nav-item">
-				<a href="'.SITEURL.'login.php" class="nav-link px-2">{LAN=LAN_LOGINMENU_51}</a>
+				<a href="'.SITEURL.'login.php" class="nav-link px-2 '.$linkcolor.'">{LAN=LAN_LOGINMENU_51}</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle px-2" data-bs-toggle="dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{LAN=LAN_LOGINMENU_51} <strong class="caret"></strong></a>
@@ -109,7 +109,7 @@ $SIGNIN_TEMPLATE['signout'] = '
 
 		<ul class="navbar-nav navbar-right">
 			{SIGNIN_PM_NAV}
-			<li class="dropdown dropdown-avatar"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-toggle="dropdown">{USER_AVATAR: w=30&h=30&crop=1&shape=circle} {SIGNIN_USERNAME} <b class="caret"></b></a>
+			<li class="dropdown dropdown-avatar"><a href="#" class="nav-link dropdown-toggle '.$linkcolor.'" data-bs-toggle="dropdown" data-toggle="dropdown">{USER_AVATAR: w=30&h=30&crop=1&shape=circle} {SIGNIN_USERNAME} <b class="caret"></b></a>
 				<ul class="dropdown-menu dropdown-menu-end">
 				<li>
 					<a class="dropdown-item" href="{SIGNIN_USERSETTINGS_HREF}"><span class="fa fa-cog"></span> {LAN=LAN_SETTINGS}</a>

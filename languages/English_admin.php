@@ -80,3 +80,26 @@ define("LAN_THEMEPREF_55", "Login link with dropdown menu");
 define("LAN_THEMEPREF_56", "Login link to login.php");
 define("LAN_THEMEPREF_57", "No login link");
 define("LAN_THEMEPREF_58", "Choose how you log in to your website");
+define("LAN_THEMEPREF_59", "Tertiary");
+define("LAN_THEMEPREF_60", "Primary subtle");
+define("LAN_THEMEPREF_61", "Secondary subtle");
+define("LAN_THEMEPREF_62", "Success subtle");
+define("LAN_THEMEPREF_63", "Info subtle");
+define("LAN_THEMEPREF_64", "Warning subtle");
+define("LAN_THEMEPREF_65", "Danger subtle");
+define("LAN_THEMEPREF_66", "Light subtle");
+define("LAN_THEMEPREF_67", "Dark");
+define("LAN_THEMEPREF_68", "Dark subtle");
+define("LAN_THEMEPREF_69", "Body-secondary");
+define("LAN_THEMEPREF_70", "Body-tertiary");
+define("LAN_THEMEPREF_71", "Light subtle");
+define("LAN_THEMEPREF_72", "Body");
+define("LAN_THEMEPREF_73", "Black");
+define("LAN_THEMEPREF_74", "White");
+define("LAN_THEMEPREF_75", "Transparent");
+define("LAN_THEMEPREF_76", "Header background color");
+define("LAN_THEMEPREF_77", "<br>
+Choose the background color of the header (navigation top), standard BS colors.");
+define("LAN_THEMEPREF_78", "Navigation bar link color");
+define("LAN_THEMEPREF_79", "<br>
+Choose the color of all links in the navigation bar, ensure sufficient contrast, standard BS colors.");

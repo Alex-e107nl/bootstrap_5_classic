@@ -395,9 +395,11 @@ th  {
 	font-weight: 600!important;
 }
 
-button, input, optgroup, select, textarea {
+/* button, input, optgroup, select, textarea {
   margin: 0px 4px 0px 0px;
 }
+*/
+
 blockquote {
   display: block;
   margin-top: 1em;
@@ -586,8 +588,12 @@ pre {
 .s-message  {
   margin-top: 20px;
 }
-.glightbox  {
-  cursor: pointer;
+
+.transition {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
+
+
 
 
