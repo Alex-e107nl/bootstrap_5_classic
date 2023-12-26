@@ -54,6 +54,10 @@ class theme_config implements e_theme_config
 				
 			'wtextwidth'     => array('title' => LAN_THEMEPREF_45, 'type' => 'radio', 'writeParms' => array('optArray' => array('col-lg-6' => LAN_THEMEPREF_42, 'col-lg-8' => LAN_THEMEPREF_43, 'col-lg-12' => LAN_THEMEPREF_44)),'help' => LAN_THEMEPREF_46),
 			
+			'customcaption' => array('title' => LAN_THEMEPREF_80, 'type' => 'boolean', 'writeParms' => array(), 'help' => ''),
+			
+			'customcapbg' => array('title'=>LAN_THEMEPREF_81, 'type'=>'image', 'help'=>LAN_THEMEPREF_82),
+			
 			'news_on' => array('title' => LAN_THEMEPREF_27, 'type' => 'boolean', 'writeParms' => array(), 'help' => ''),
 			
 			'postitcomments' => array('title' => LAN_THEMEPREF_53, 'type' => 'boolean', 'writeParms' => array(), 'help' => LAN_THEMEPREF_54),

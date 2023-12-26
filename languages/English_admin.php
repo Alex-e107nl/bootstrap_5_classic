@@ -103,3 +103,6 @@ Choose the background color of the header (navigation top), standard BS colors."
 define("LAN_THEMEPREF_78", "Navigation bar link color");
 define("LAN_THEMEPREF_79", "<br>
 Choose the color of all links in the navigation bar, ensure sufficient contrast, standard BS colors.");
+define("LAN_THEMEPREF_80", "Caption with image as background layout FW");
+define("LAN_THEMEPREF_81", "Choose or upload the background image (1920px)");
+define("LAN_THEMEPREF_82", "Choose an image of at least 1920px by 800px.");

@@ -794,10 +794,6 @@ var $override = true;
 	}*/
 
 
-
-
-
-
 	function sc_news_body($parm=null)
 	{
 		$text = '';
@@ -846,13 +842,13 @@ var $override = true;
 				return $news_body;
 			}  
 			
-		$tp = e107::getParser();
-		e107::getBB()->setClass("news");
-		$route = e107::route();
-		$sc = e107::getScBatch('news');  
-		$data = $sc->getScVar('news_item');
-		$news_body = '';
-		if($parm != 'extended')
+				$tp = e107::getParser();
+				e107::getBB()->setClass("news");
+				$route = e107::route();
+				$sc = e107::getScBatch('news');  
+				$data = $sc->getScVar('news_item');
+				$news_body = '';
+				if($parm != 'extended')
 			{
 				$news_body = $tp->toHTML($data['news_body'], true, 'BODY, fromadmin', $data['news_author']);
 			}
@@ -865,6 +861,53 @@ var $override = true;
 			e107::getBB()->clearClass();
 
 			return $news_body;
+	}
+
+
+
+	function sc_customcaption($parm=null)
+	{
+		$headerbg  = e107::pref('theme', 'headerbg');
+		$customcapbg  = e107::pref('theme', 'customcapbg');
+		$width= 1920; $height= 800; $crop = 1;
+		e107::getParser()->setThumbSize($width, $height, $crop);
+		$customcapbg = e107::getParser()->thumbUrl($customcapbg);
+		
+		$text = '';
+		$display = e107::pref('theme', 'customcaption');
+		$display = varset($display, true);
+
+		if ($display)
+			{
+				$text ='
+						<div class="captioncover py-5" style="background-image: url('.$customcapbg.'">
+							<div class="col-12 col-xxl-8 mx-auto p-4 py-md-1 trans01 rounded">
+								<h2 class="mt-4 mb-3 text-light">{---CAPTION---}</h2>
+								<div class="'.$headerbg.' rounded-3">
+								{---BREADCRUMB---}
+								</div>
+							</div>
+						</div>
+						';
+
+						return $text;
+			}  
+			
+				$text ='	
+						
+							<div class="col-12 col-xxl-8 mx-auto p-4 py-md-1">
+								<h2 class="mt-4 mb-3">{---CAPTION---}</h2>
+								<div class="'.$headerbg.' rounded-3">
+								{---BREADCRUMB---}
+								</div>
+							</div>
+					
+						';
+
+						return $text;
+		
+
+			
 	}
 
 	

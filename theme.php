@@ -52,7 +52,7 @@ if(!defined('e107_INIT'))
 		{
 		//	e107::css('theme', 'css/bootstrap.min.css'); // always load style.css last.
 			e107::css('theme', 'style.css'); // always load style.css last.
-			e107::css('theme', THEME_STYLE);
+			e107::css('theme', 	THEME_STYLE);
 			e107::css('theme', 'css/glightbox.min.css');
 			e107::css('theme', 'css/plyr.min.css');
 			e107::css('theme', 'css/stickiestyle.css');
@@ -77,7 +77,12 @@ if(!defined('e107_INIT'))
 		function tablestyle($caption, $text, $mode='', $options = array())
 		{
 			$bgimage  = e107::pref('theme', 'wmessagebg');
-			$bgimage = e107::getParser()->replaceConstants($bgimage);
+			//$bgimage = e107::getParser()->replaceConstants($bgimage);
+			$width= 1920;
+			$height= 800;
+			$crop = 1;
+			e107::getParser()->setThumbSize($width, $height, $crop);
+			$bgimage = e107::getParser()->thumbUrl($bgimage);
 			$wtextcolor  = e107::pref('theme', 'wtextcolor');
 			$wtextwidth  = e107::pref('theme', 'wtextwidth');
 			$style = varset($options['setStyle'], 'default');
