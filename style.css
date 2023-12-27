@@ -600,4 +600,10 @@ pre {
   background-position: center;
 }
 
+/* CSS File for Javascript library elements in all areas of e107 - Rating */
+div.e-rate				{ width:280px!important;}
+.e-rate-votes			{ width:150px!important; }
+select.e-bb				{ margin-top:0px; width:100px; }
+
+
 

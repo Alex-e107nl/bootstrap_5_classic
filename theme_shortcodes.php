@@ -881,7 +881,7 @@ var $override = true;
 			{
 				$text ='
 						<div class="captioncover py-5 px-2" style="background-image: url('.$customcapbg.'">
-							<div class="col-12 col-xxl-8 mx-auto p-4 py-md-1 trans01 rounded text-secundary">
+							<div class="col-12 col-xxl-8 mx-auto p-3 py-md-1 trans01 rounded text-secundary">
 								<h2 class="mt-4 mb-3">{---CAPTION---}</h2>
 								
 								{---BREADCRUMB---}
