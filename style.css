@@ -336,13 +336,13 @@ span.badge  {
   }
 }
 
-@media (min-width: 1400.01px) and (max-width: 1780px){
+@media (min-width: 1400.01px) and (max-width: 1580px){
 	
 	.col-xxl-8 {
     flex: 0 0 auto;
     width: 100%!important;
 	
-}
+  }
 }
 .optionseven .fa-fw {
 	 
