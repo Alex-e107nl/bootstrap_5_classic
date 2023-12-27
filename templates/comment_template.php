@@ -27,7 +27,7 @@ if (!defined('e107_INIT')) { exit; }
 		
 	$COMMENT_TEMPLATE['form'] = "
 		{SETIMAGE: w=90&h=90&crop=1}
-		<div class='media comment-box comment-box-form d-flex alert alert-secondary rounded-3 p-3 clearfix'>
+		<div class='col-12 col-lg-6 media comment-box comment-box-form d-flex alert alert-secondary rounded-3 p-3 clearfix'>
 			<div class='comment-box-left media-object pull-left me-3' >
 			{COMMENT_AVATAR: shape=circle}
 			</div>
@@ -43,6 +43,7 @@ if (!defined('e107_INIT')) { exit; }
 			</div>
 		</div>
 		<div class='clear_b'><!-- --></div>
+		
 	"; 
 
 	$COMMENT_TEMPLATE['item'] = '
@@ -76,22 +77,23 @@ if (!defined('e107_INIT')) { exit; }
 
 	$COMMENT_TEMPLATE['form']			= "
 		{SETIMAGE: w=90&h=90&crop=1}
-		<div class='media comment-box comment-box-form d-flex clearfix'>
+		<div class='col-12 col-lg-6 media comment-box comment-box-form d-flex alert alert-secondary rounded-3 p-3 clearfix'>
 			<div class='comment-box-left media-object pull-left me-3'>
 				{COMMENT_AVATAR: shape=circle}
 			</div>
 			<div class='media-body comment-box-right text-left' >
-				<div class='P10'>
+				<div class='P10  mb-3'>
 					{AUTHOR_INPUT}
 					{COMMENT_INPUT}
-					<div id='commentformbutton'>
+				</div>
+				<div id='commentformbutton'>
 						{COMMENT_BUTTON}
 						{COMMENT_SHARE}
-					</div>
 				</div>
+				
 			</div>
 		</div>
-		<div class='clear_b'><!-- --></div>
+		<div class='clear_b'><!-- --></div> 
 		<hr>
 		"; 
 
