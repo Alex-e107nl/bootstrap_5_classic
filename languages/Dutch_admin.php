@@ -104,7 +104,7 @@ define("LAN_THEMEPREF_78", "Navigatiebalk link kleur");
 define("LAN_THEMEPREF_79", "<br>
 Kies de kleur van alle links in de navigatiebalk, zorg voor voldoende contrast, standaard BS kleuren.");
 define("LAN_THEMEPREF_80", "Titel met afbeelding als achtergrond layout FW");
-define("LAN_THEMEPREF_81", "Kies of upload de titel achergrondafbeelding");
+define("LAN_THEMEPREF_81", "Kies of upload de titel achtergrondafbeelding");
 define("LAN_THEMEPREF_82", "Kies een afbeelding van minimaal 1920px bij 800px.");
 
 
