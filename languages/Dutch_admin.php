@@ -99,10 +99,10 @@ define("LAN_THEMEPREF_74", "White");
 define("LAN_THEMEPREF_75", "Transparant");
 define("LAN_THEMEPREF_76", "Header achtergrond kleur");
 define("LAN_THEMEPREF_77", "<br>
-Kies de kleur van de header achtergrond (navigatie-top), standaard BS kleuren.");
+Kies de kleur van de header achtergrond (navigatie-top), standaard BS kleuren. (<a href='https://getbootstrap.com/docs/5.3/utilities/background/#background-color' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>)");
 define("LAN_THEMEPREF_78", "Navigatiebalk link kleur");
 define("LAN_THEMEPREF_79", "<br>
-Kies de kleur van alle links in de navigatiebalk, zorg voor voldoende contrast, standaard BS kleuren.");
+Kies de kleur van alle links in de navigatiebalk, zorg voor voldoende contrast, standaard BS kleuren. (<a href='https://getbootstrap.com/docs/5.3/helpers/colored-links/' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>)");
 define("LAN_THEMEPREF_80", "Titel met afbeelding als achtergrond layout FW");
 define("LAN_THEMEPREF_81", "Kies of upload de titel achtergrondafbeelding");
 define("LAN_THEMEPREF_82", "Kies een afbeelding van minimaal 1920px bij 800px.");
