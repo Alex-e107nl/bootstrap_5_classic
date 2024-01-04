@@ -106,6 +106,9 @@ Kies de kleur van alle links in de navigatiebalk, zorg voor voldoende contrast, 
 define("LAN_THEMEPREF_80", "Titel met afbeelding als achtergrond layout FW");
 define("LAN_THEMEPREF_81", "Kies of upload de titel achtergrondafbeelding");
 define("LAN_THEMEPREF_82", "Kies een afbeelding van minimaal 1920px bij 800px.");
-
-
+define("LAN_THEMEPREF_83", "Header achtergrond met verloop");
+define("LAN_THEMEPREF_84", "Kies of de kleur van de header achtergrond met een verloop wordt getoond. <br><a href='https://getbootstrap.com/docs/5.3/utilities/background/#background-gradient' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>");
+define("LAN_THEMEPREF_85", "Achtergrond kleur actieve sublink navigatie");
+define("LAN_THEMEPREF_86", "<br>
+Kies de kleur van de achtergrond van de actieve sublinks in het navigatiemenu. (<a href='https://getbootstrap.com/docs/5.3/utilities/background/#background-gradient' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>)");
 

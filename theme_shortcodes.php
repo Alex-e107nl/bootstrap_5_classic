@@ -28,13 +28,14 @@ var $override = true;
 	{
 		$pref = e107::pref('theme', 'header_type');
 		$headerbg  = e107::pref('theme', 'headerbg');
+		$gradient  = e107::pref('theme', 'gradient');
 		
 		
 		switch ($pref)
 		{
 			case '01':
 				default:
-				$text = ' 	<header class="p-0 '.$headerbg.' transition border-bottom {STICKYHEADER}">
+				$text = ' 	<header class="p-0 '.$headerbg.' '.$gradient.' transition border-bottom {STICKYHEADER}">
 								<div class="container-fluid col-12 col-xxl-8 mx-auto">
 									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-start" aria-label="navbars example">
 										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3 text-decoration-none">
@@ -65,7 +66,7 @@ var $override = true;
 				break;
 
 			case '02':
-				$text = '	<header class="p-0 '.$headerbg.' transition border-bottom {STICKYHEADER}">
+				$text = '	<header class="p-0 '.$headerbg.' '.$gradient.' transition border-bottom {STICKYHEADER}">
 								<div class="container-fluid col-12 col-xxl-8 mx-auto">
 									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-start" aria-label="navbars example">
 										<a href="{SITEURL}" class="d-flex align-items-left me-lg-3   text-decoration-none">
@@ -99,42 +100,43 @@ var $override = true;
 				break;
 				
 			case '03':
-				$text = '<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
-							<div class="container-fluid col-12 col-xxl-8 mx-auto">
-								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
-								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto text-decoration-none d-lg-none">
-									{BOOTSTRAP_BRANDING}
-								</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
-									</button>
+				$text = '<div class="{STICKYHEADER}">
+							<nav class="py-1 '.$headerbg.' '.$gradient.' border-bottom mb-0">
+								<div class="container-fluid col-12 col-xxl-8 mx-auto">
+									<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
+									<a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto text-decoration-none d-lg-none">
+										{BOOTSTRAP_BRANDING}
+									</a>
+										<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+										</button>
 										
-									<div class="collapse navbar-collapse" id="navbars">	
+										<div class="collapse navbar-collapse" id="navbars">	
 
-										{BOOTSTRAP_NAV_ALIGN}
+											{BOOTSTRAP_NAV_ALIGN}
 										
-										<div class="my-auto">
-											{NAVIGATION: layout=alt8&type=alt5}
-										</div>
+											<div class="my-auto">
+												{NAVIGATION: layout=alt8&type=alt5}
+											</div>
 											
-										<div class="text-end ms-2">
-											{SIGNIN}
+											<div class="text-end ms-2">
+												{SIGNIN}
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</nav>
-						<header class="py-2 mb-0 border-bottom bg-body-secondary">
-							<div class="container-fluid col-lg-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
-								<a href="{SITEURL}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none d-none d-lg-block">
-									{BOOTSTRAP_BRANDING}
-								</a>
-								<div class="my-auto py-2">
-								{SITESEARCH}
+							</nav>
+							<header class="py-2 mb-0 border-bottom bg-body-secondary">
+								<div class="container-fluid col-lg-12 col-xxl-8 mx-auto d-flex flex-wrap justify-content-center">
+									<a href="{SITEURL}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none d-none d-lg-block">
+										{BOOTSTRAP_BRANDING}
+									</a>
+									<div class="my-auto py-2">
+										{SITESEARCH}
+									</div>
 								</div>
-							</div>
-						</header>
-	
+							</header>
+						</div>
 							';
 		
 				return $text;				
@@ -154,7 +156,7 @@ var $override = true;
 							</div>
 						</header>
 	
-						<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
+						<nav class="py-1 '.$headerbg.' '.$gradient.' border-bottom mb-0 {STICKYHEADER}">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example>
 								  <a class="navbar-brand d-lg-none" href="#">{SITENAME}</a>
@@ -184,7 +186,7 @@ var $override = true;
 				break;	
 				
 			case '05':
-				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
+				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' '.$gradient.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
 				
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								
@@ -217,7 +219,7 @@ var $override = true;
 				break;
 			
 			case '06':
-				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
+				$text = '<nav class="navbar navbar-expand-lg p-1 '.$headerbg.' '.$gradient.' transition border-bottom {STICKYHEADER}" aria-label="Offcanvas navbar large">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								
 								<a href="{SITEURL}" class="navbar-brand">
@@ -251,7 +253,7 @@ var $override = true;
 			case '07':
 		
 				$text = '<div class="{STICKYHEADER}">
-						<nav class="py-1 '.$headerbg.' border-bottom mb-0 {STICKYHEADER}">
+						<nav class="py-1 '.$headerbg.' '.$gradient.' border-bottom mb-0 {STICKYHEADER}">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
 								 <a href="{SITEURL}" class="d-flex align-items-center mb-0 mb-lg-0 me-lg-auto  text-decoration-none d-lg-none">
@@ -319,7 +321,7 @@ var $override = true;
 							</div>
 						</header>
 	
-						<nav class="py-1 '.$headerbg.' border-bottom mb-0">
+						<nav class="py-1 '.$headerbg.' '.$gradient.' border-bottom mb-0">
 							<div class="container-fluid col-12 col-xxl-8 mx-auto">
 								<div class="navbar navbar-expand-lg d-flex flex-wrap justify-content-lg-end" aria-label="navbars example">
 									<a class="navbar-brand d-lg-none" href="#">{SITENAME}</a>
@@ -868,6 +870,7 @@ var $override = true;
 	function sc_customcaption($parm=null)
 	{
 		$headerbg  = e107::pref('theme', 'headerbg');
+		$gradient  = e107::pref('theme', 'gradient');
 		$customcapbg  = e107::pref('theme', 'customcapbg');
 		$width= 1920; $height= 800; $crop = 1;
 		e107::getParser()->setThumbSize($width, $height, $crop);
@@ -897,7 +900,7 @@ var $override = true;
 						
 							<div class="col-12 col-xxl-8 mx-auto p-4 py-md-1">
 								<h2 class="mt-4 mb-3">{---CAPTION---}</h2>
-								<div class="'.$headerbg.' rounded-3">
+								<div class="'.$headerbg.' '.$gradient.' rounded-3">
 								{---BREADCRUMB---}
 								</div>
 							</div>

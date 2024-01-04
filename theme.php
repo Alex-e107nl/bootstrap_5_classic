@@ -57,6 +57,8 @@ if(!defined('e107_INIT'))
 			e107::css('theme', 'css/plyr.min.css');
 			e107::css('theme', 'css/stickiestyle.css');
 			
+			$subactivelinkcolor  = e107::pref('theme', 'subactivelinkcolor');
+			e107::css('inline', '.dropdown-menu {  --bs-dropdown-link-active-bg: var(--'.$subactivelinkcolor.')}');
 		//	e107::css('inline', '#carousel-hero.carousel {   margin-bottom: 80px; }');
 
 		}

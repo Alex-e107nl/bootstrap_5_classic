@@ -106,3 +106,8 @@ Choose the color of all links in the navigation bar, ensure sufficient contrast,
 define("LAN_THEMEPREF_80", "Caption with image as background layout FW");
 define("LAN_THEMEPREF_81", "Choose or upload the background image (1920px)");
 define("LAN_THEMEPREF_82", "Choose an image of at least 1920px by 800px.");
+define("LAN_THEMEPREF_83", "Background gradient");
+define("LAN_THEMEPREF_84", "Choose whether the color of the header background is shown with a gradient.<br><a href='https://getbootstrap.com/docs/5.3/utilities/background/#background-gradient' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>");
+define("LAN_THEMEPREF_85", "Background color active sublink navigation");
+define("LAN_THEMEPREF_86", "<br>
+Choose the color of the background of the active sublinks in the navigation menu. (<a href='https://getbootstrap.com/docs/5.3/utilities/background/#background-gradient' target='_blank' rel='noopener'>Link >> Bootstrap 5.3.2</a>)");

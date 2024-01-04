@@ -46,7 +46,7 @@ $NAVIGATION_TEMPLATE['main']['item_submenu'] = "
 
 // Main Link which has a sub menu - active state.
 $NAVIGATION_TEMPLATE['main']['item_submenu_active'] = '
-	<li class="nav-item dropdown px-2 active ".$linkcolor." {NAV_LINK_IDENTIFIER}">
+	<li class="nav-item dropdown px-2 active  {NAV_LINK_IDENTIFIER}">
 		<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" data-bs-toggle="dropdown" id="navbarDropdownMenuLink-{NAV_LINK_ID}" aria-haspopup="true" aria-expanded="true" data-target="#" href="#">
 		 {NAV_LINK_ICON}{NAV_LINK_NAME}
 		</a>
