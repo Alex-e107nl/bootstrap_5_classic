@@ -144,7 +144,7 @@ if(!defined('e107_INIT'))
 				    echo '	<div class="container-fluid hb-me bg-body-tertiary" style="background-image:  url('.$bgimage.')">
 								<div class="row full-screen align-items-left">
 									<div class="col-12 col-xxl-8 mx-auto p-4 py-md-5">
-										<div class="row d-flex py-5 my-5">
+										<div class="row d-flex py-4 my-4">
 											<div class="'.$wtextwidth.' p-5 trans01 align-content-lg-start '.$wtextcolor.' rounded-3">';
 											if(!empty($caption))
 											{
