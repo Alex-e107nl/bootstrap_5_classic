@@ -605,7 +605,12 @@ div.e-rate				{ width:280px!important;}
 .e-rate-votes			{ width:150px!important; }
 select.e-bb				{ margin-top:0px; width:100px; }
 
-
+ span.required:after {
+     content: "*";
+     color: red;
+     font-size: 24px;
+     margin-left: 4px;
+ }
 
 
 
