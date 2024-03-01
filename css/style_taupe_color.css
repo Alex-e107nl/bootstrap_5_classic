@@ -96,14 +96,14 @@
   --bs-secondary-bg-rgb: 201,191,181;
   --bs-tertiary-color: rgba(33, 37, 41, 0.5);
   --bs-tertiary-color-rgb: 33,37,41;
-  --bs-tertiary-bg: #eae3d1;
-  --bs-tertiary-bg-rgb: 234,227,209;
+  --bs-tertiary-bg: #9ab4ba;
+  --bs-tertiary-bg-rgb: 154,180,186;
   --bs-heading-color: inherit;
   --bs-link-color: #698d99;
   --bs-link-color-rgb: 105,141,153;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #9ab4ba;
-  --bs-link-hover-color-rgb: 154,180,186;
+  --bs-link-hover-color: #526e78;
+  --bs-link-hover-color-rgb: 82,110,120;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
@@ -136,8 +136,8 @@
   --bs-btn-bg: #698d99;
   --bs-btn-border-color: #698d99;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #9ab4ba;
-  --bs-btn-hover-border-color: #9ab4ba;
+  --bs-btn-hover-bg: #526e78;
+  --bs-btn-hover-border-color: #526e78;
   --bs-btn-focus-shadow-rgb: 49,132,253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #9ab4ba;
@@ -179,5 +179,35 @@
   text-align: left;
   list-style: none;
 }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap');
+
+.zenloop  {
+	 
+  font-family: 'Zen Loop', cursive;
+}
+/* font-family: "AvenirCondensedHand";   */
+
+.nav-link  {
+	font-family: 'Zen Loop', cursive;
+	font-size: 20pt;
+		 font-weight: bold;
+}
+
+.dropdown-toggle::after {
+  	font-family: 'Zen Loop', cursive;
+	font-size: 14pt;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  	font-family: 'Zen Loop', cursive;
+	 font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .h2, h2 {
+    font-size: 2.5rem;
+  }
 }
 
