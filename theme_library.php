@@ -31,6 +31,9 @@ class theme_library
 	 */
 	function config_alter(&$libraries)
 	{
+		//unset($libraries['bootstrap5']);
+		//unset($libraries['cdn.bootstrap5']);
+		
 		// Bootstrap (CDN).
 		$libraries['cdn.bootstrap5']['library_path'] = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2';
 		$libraries['cdn.bootstrap5']['path'] = '';
